@@ -14,16 +14,17 @@ const RefreshBtn = () => {
       // Style here will overwrite the entire style above
       return (
         <ChakraProvider>
-        <Button colorScheme='blue' justifySelf={"center"} margin='2.5'
-          onClick={() => {
+        <Button colorScheme='blue' justifySelf={"left"} margin='2.5'
+          onClick={async () => {
             toast({
               containerStyle: {
                
               },
-            })
+            });
+            window.location.reload();
           }}
         >
-          REFRESH
+            REFRESH
         </Button>
         </ChakraProvider>
       )
