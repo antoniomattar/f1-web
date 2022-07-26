@@ -13,7 +13,7 @@ const Basket = () => {
       
     <Header />
     <Menu />
-    <Title name='Basket' />
+    <Title name='Baskets' />
     <M3U8Player link='https://cllive.itworkscdn.net/lbcgrouplive/token=nva=1658837142~dirs=1~hash=08b42409fbef4246789d0/lbclive.smil/lbc_240p_chunks.m3u8'/>
     <Footer/>
       
