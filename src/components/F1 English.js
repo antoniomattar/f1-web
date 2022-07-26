@@ -1,12 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Header from './Title'
 import Menu from './Menu';
 import Footer from './Footer'
 import StreamChangeButton from './StreamChangeButton';
-import EmbedVideoPlayer from "./EmbedVideoPlayer";
-import { ChakraProvider, Heading } from '@chakra-ui/react'
 import Title from "./Title";
+import M3U8Player from "./M3U8Player";
+import RefreshBtn from "./RefreshBtn";
+
 
 const F1English = (props) => {
 
@@ -14,12 +14,13 @@ const F1English = (props) => {
     
     <React.Fragment>
       
-    <Header />
-    <Menu />
-    <Title name='English' />
-    <EmbedVideoPlayer/>
-    <StreamChangeButton language='English' newlang='Arabic'/>
-    <Footer/>
+
+          <Menu/>
+          <Title name='English' />
+          <RefreshBtn/>
+          <M3U8Player link={props.link} name='English'/>
+          <StreamChangeButton language='English' newlang='Arabic'/>
+          <Footer/>
       
     </React.Fragment>
     

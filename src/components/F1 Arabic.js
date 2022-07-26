@@ -1,12 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Header from './Title'
 import Menu from './Menu';
 import Title from "./Title";
 import Footer from './Footer'
 import StreamChangeButton from './StreamChangeButton';
-import EmbedVideoPlayer from "./EmbedVideoPlayer";
-import { ChakraProvider } from '@chakra-ui/react'
+import M3U8Player from "./M3U8Player";
+import RefreshBtn from "./RefreshBtn";
 
 const F1Arabic = (props) => {
 
@@ -14,10 +13,11 @@ const F1Arabic = (props) => {
     
     <React.Fragment>
         
-            <Header />
-            <Menu />
+          
+            <Menu/>
             <Title name='Arabic' />
-            <EmbedVideoPlayer/>
+            <RefreshBtn/>
+            <M3U8Player link={props.link} name="Arabic"/>
             <StreamChangeButton language='Arabic' newlang='English'/>
             <Footer/>
         
