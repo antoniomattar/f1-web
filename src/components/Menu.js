@@ -1,11 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
+    const navigate = useNavigate();
     return (
         <div className="ui three item menu">
-            <a className="item">F1🏎</a> 
-            <a className="item">BASKET🏀</a> 
-            <a className="item">ABOUT</a> 
+            <a className="item" onClick='navigate(/)' >F1🏎</a> 
+            <a className="item" onClick='navigate(/basketball)'>BASKET🏀</a> 
+            <a className="item" onClick='navigate(/about)'>ABOUT</a> 
         </div>
     );
 };

@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<F1English name='English'/>}/>
           <Route exact path="/arabic" element={<F1Arabic name='Arabic'/>}/>
-          <Route exact path="/basketball" element={<div>Hi</div>}/>
+          <Route exact path="/basketball" element={<Basket name='Basket'/>}/>
         </Routes>
       
     </Router>
