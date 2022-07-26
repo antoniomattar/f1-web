@@ -1,15 +1,16 @@
 import React from 'react'
 import ReactHlsPlayer from 'react-hls-player';
+import ReactPlayer from 'react-player'
+
 const M3U8Player = (props) => {
     const source = props.link;
   return (
-    <ReactHlsPlayer
-    src = {source}
-    autoPlay={true}
-    controls={true}
-    width="100%"
-    height="auto"
-    />
+    <>
+    <ReactPlayer url={source} playing={true} controls={true} width='100%' height='auto'/>
+    </>
+    
+
+    
   )
 }
 
