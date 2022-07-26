@@ -14,7 +14,7 @@ const RefreshBtn = () => {
       // Style here will overwrite the entire style above
       return (
         <ChakraProvider>
-        <Button colorScheme='blue' justifySelf={"left"} margin='2.5'
+        <Button colorScheme='blue' alignItems={'center'} margin='2.5'
           onClick={async () => {
             toast({
               containerStyle: {
