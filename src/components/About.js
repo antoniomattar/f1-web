@@ -13,7 +13,7 @@ const About = () => {
     <Menu />
     <Title name='About' />
     <br/>
-    <Text fontSize='50px' color='tomato'>
+    <Text fontSize='50px' color='tomato' margin="10">
     FOLLOW ANTO.NIOMERHEB ON INSTAGRAM
     </Text>
     <Footer/>
