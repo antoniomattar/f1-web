@@ -8,6 +8,7 @@ import './App.css';
 import F1Arabic from './F1 Arabic'
 import F1English from './F1 English'
 import Basket from './Basket'
+import About from "./About"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" element={<F1English name='English' link= 'https://cllive.itworkscdn.net/lbcgrouplive/token=nva=1658852057~dirs=1~hash=0ef82e9fa5910e9c1f59c/lbclive.smil/lbc_240p_chunks.m3u8'/>}/>
           <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= 'https://cllive.itworkscdn.net/lbcgrouplive/token=nva=1658852057~dirs=1~hash=0ef82e9fa5910e9c1f59c/lbclive.smil/lbc_240p_chunks.m3u8'/>}/>
           <Route exact path="/basketball" element={<Basket name='Basket' link= 'https://cllive.itworkscdn.net/lbcgrouplive/token=nva=1658852057~dirs=1~hash=0ef82e9fa5910e9c1f59c/lbclive.smil/lbc_240p_chunks.m3u8'/>}/>
+          <Route exact path="/about" element={<About/>}/>
         </Routes>
       
     </Router>

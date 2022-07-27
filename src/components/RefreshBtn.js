@@ -1,5 +1,5 @@
 import React from 'react'
-import { useToast, Button, ChakraProvider } from '@chakra-ui/react'
+import { useToast, Button, ChakraProvider, Center} from '@chakra-ui/react'
 
 const RefreshBtn = () => {
     const toast = useToast({
@@ -14,18 +14,16 @@ const RefreshBtn = () => {
       // Style here will overwrite the entire style above
       return (
         <ChakraProvider>
-        <Button colorScheme='blue' alignItems={'center'} margin='2.5'
-          onClick={async () => {
+            <Center>
+    <Button colorScheme='blue' justifySelf={"center"} onClick={async () => {
             toast({
               containerStyle: {
                
               },
             });
             window.location.reload();
-          }}
-        >
-            REFRESH
-        </Button>
+          }}>REFRESH</Button>
+        </Center>
         </ChakraProvider>
       )
     }

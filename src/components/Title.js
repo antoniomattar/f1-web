@@ -5,7 +5,7 @@ const Title = (props) => {
 
     return (
         <ChakraProvider>
-            <Heading display={'flex'} justifyContent={'center'} fontFamily={'sans-serif'}>{props.name} STREAM</Heading>
+            <Heading display={'flex'} justifyContent={'center'} fontFamily={'sans-serif'}>{props.name}</Heading>
         </ChakraProvider>
         
     );

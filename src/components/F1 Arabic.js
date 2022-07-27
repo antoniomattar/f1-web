@@ -6,6 +6,7 @@ import Footer from './Footer'
 import StreamChangeButton from './StreamChangeButton';
 import M3U8Player from "./M3U8Player";
 import RefreshBtn from "./RefreshBtn";
+import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 
 const F1Arabic = (props) => {
 
@@ -13,9 +14,12 @@ const F1Arabic = (props) => {
     
     <React.Fragment>
         
-          
+            <Header/>
             <Menu/>
-            <Title name='Arabic' />
+            <Title name='Arabic Stream' />
+            <br/>
+            <WhatsAppGrpBtn/>
+            <br/>
             <RefreshBtn/>
             <M3U8Player link={props.link} name="Arabic"/>
             <StreamChangeButton language='Arabic' newlang='English'/>
