@@ -25,7 +25,7 @@ const F1English = (props) => {
           <Footer/>
           {/* WhatsApp icon */}
           <a
-              href="https://wa.me/2348100000000"
+              href="https://wa.me/33626043435"
               class="whatsapp_float"
               target="_blank"
               rel="noopener noreferrer"
