@@ -1,11 +1,11 @@
 import React from 'react'
-import { Button, Center, ChakraProvider } from '@chakra-ui/react'
+import { Button, Center, ChakraProvider,Link } from '@chakra-ui/react'
 
 const WhatsAppGrpBtn = () => {
   return (
     <ChakraProvider>
             <Center>
-    <Button colorScheme='green' justifySelf={"center"} margin="2.5">JOIN OUR WHATSAPP GROUP</Button>
+    <Button colorScheme='green' justifySelf={"center"} margin="2.5"> <Link href="google.com">JOIN OUR WHATSAPP GROUP</Link> </Button>
         </Center>
         </ChakraProvider>
   )
