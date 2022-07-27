@@ -7,6 +7,7 @@ import Title from "./Title";
 import M3U8Player from "./M3U8Player";
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
+import WhatsAppChatBtn from "./WhatsAppChatBtn";
 
 
 const F1English = (props) => {
@@ -23,16 +24,7 @@ const F1English = (props) => {
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <Footer/>
-          {/* WhatsApp icon */}
-          <a
-              href="https://wa.me/33626043435"
-              class="whatsapp_float"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-whatsapp whatsapp-icon"></i>
-            </a>
-      
+          <WhatsAppChatBtn/>
     </React.Fragment>
     
   );

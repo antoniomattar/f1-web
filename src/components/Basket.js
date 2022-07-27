@@ -6,6 +6,7 @@ import M3U8Player from './M3U8Player'
 import Footer from './Footer'
 import RefreshBtn from './RefreshBtn'
 import WhatsAppGrpBtn from './WhatsAppGrpBtn'
+import WhatsAppChatBtn from './WhatsAppChatBtn'
 
 const Basket = (props) => {
   return (
@@ -18,15 +19,7 @@ const Basket = (props) => {
     <M3U8Player link={props.link} name="Basket"/>
     <RefreshBtn/>
     <Footer/>
-    {/* WhatsApp icon */}
-    <a
-              href="https://wa.me/33626043435"
-              class="whatsapp_float"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-whatsapp whatsapp-icon"></i>
-            </a>
+    <WhatsAppChatBtn/>
       
     </React.Fragment>
   )
