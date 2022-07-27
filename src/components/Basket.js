@@ -14,11 +14,9 @@ const Basket = (props) => {
     <Header/>
     <Menu />
     <Title name='Basket Stream' />
-    <br/>
     <WhatsAppGrpBtn/>
-    <br/>
-    <RefreshBtn/>
     <M3U8Player link={props.link} name="Basket"/>
+    <RefreshBtn/>
     <Footer/>
       
     </React.Fragment>

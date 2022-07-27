@@ -19,8 +19,8 @@ const F1English = (props) => {
           <Menu/>
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
-          <RefreshBtn/>
           <M3U8Player link={props.link} name='English'/>
+          <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <Footer/>
       
