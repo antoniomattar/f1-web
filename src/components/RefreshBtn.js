@@ -15,7 +15,7 @@ const RefreshBtn = () => {
       return (
         <ChakraProvider>
             <Center>
-    <Button colorScheme='blue' justifySelf={"center"} onClick={async () => {
+    <Button colorScheme='blue'  margin="2.5" justifySelf={"center"} onClick={async () => {
             toast({
               containerStyle: {
                

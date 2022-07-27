@@ -14,7 +14,7 @@ const About = () => {
     <Title name='About' />
     <br/>
     <Text fontSize='50px' color='tomato'>
-    I'm using a custom font-size value for this text
+    FOLLOW ANTO.NIOMERHEB ON INSTAGRAM
     </Text>
     <Footer/>
       

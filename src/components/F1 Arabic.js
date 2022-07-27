@@ -17,9 +17,7 @@ const F1Arabic = (props) => {
             <Header/>
             <Menu/>
             <Title name='Arabic Stream' />
-            <br/>
             <WhatsAppGrpBtn/>
-            <br/>
             <RefreshBtn/>
             <M3U8Player link={props.link} name="Arabic"/>
             <StreamChangeButton language='Arabic' newlang='English'/>
