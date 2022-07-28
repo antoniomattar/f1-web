@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <ChakraProvider>
-            <Heading display={'flex'} justifyContent={'center'} textColor={'red'} fontFamily={'monospace'}>F1 LEBANON 🇱🇧</Heading>
+            <Heading display={'flex'} justifyContent={'center'} textColor={'red'} fontFamily={'monospace'}>WELCOME 🇱🇧</Heading>
         </ChakraProvider>
         
     );

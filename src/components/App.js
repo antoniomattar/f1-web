@@ -9,11 +9,16 @@ import F1Arabic from './F1 Arabic'
 import F1English from './F1 English'
 import Basket from './Basket'
 import About from "./About"
+import Header from './Header';
+import Menu from './Menu';
+import Footer from './Footer';
 
 function App() {
   return (
-    
-    <Router>
+    <React.Fragment>
+      <Header/>
+      <Menu/>
+      <Router>
         
         <Routes>
           <Route exact path="/" element={<F1English name='English' link= 'https://www.youtube.com/watch?v=9jo51nJrO0k'/>}/>
@@ -23,6 +28,9 @@ function App() {
         </Routes>
       
     </Router>
+    <Footer/>
+    </React.Fragment>
+    
     
     
   );

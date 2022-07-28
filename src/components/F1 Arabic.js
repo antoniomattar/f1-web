@@ -14,15 +14,12 @@ const F1Arabic = (props) => {
   return (
     
     <React.Fragment>
-        
-            <Header/>
-            <Menu/>
             <Title name='Arabic Stream' />
             <WhatsAppGrpBtn/>
             <M3U8Player link={props.link} name="Arabic"/>
             <RefreshBtn/>
             <StreamChangeButton language='Arabic' newlang='English'/>
-            <Footer/>
+            
             <WhatsAppChatBtn/>
         
     </React.Fragment>
