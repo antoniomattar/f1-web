@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import Clappr from 'clappr';
 import { Center } from '@chakra-ui/react';
 
 const M3U8Player = (props) => {

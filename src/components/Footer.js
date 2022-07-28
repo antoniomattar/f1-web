@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <span style={{ display:'flex', justifyContent:'center',fontFamily: 'monospace', textAlign: 'center'}}>
-        Made with   <strong style={{color: 'red'}}>&hearts;</strong>   by <strong><a href="https://www.instagram.com/antonio_mattar/"> @antonio_mattar</a></strong>
+        Made with&nbsp;<strong style={{color: 'red'}}>&hearts;</strong>&nbsp;by&nbsp;<strong><a style={{color:'red'}}href="https://www.instagram.com/antonio_mattar/"> <u>@antonio_mattar</u></a></strong>
         </span>
           
     );
