@@ -21,7 +21,7 @@ function App() {
       <Router>
         
         <Routes>
-          <Route exact path="/" element={<F1English name='English' link= 'https://www.youtube.com/watch?v=Hfm94aHAbYQ'/>}/>
+          <Route exact path="/" element={<F1English name='English' link= 'https://d9105ej8z52sui.cloudfront.net/stream/live.m3u8'/>}/>
           <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= 'https://www.youtube.com/watch?v=9jo51nJrO0k'/>}/>
           <Route exact path="/basketball" element={<Basket name='Basket' link= 'https://www.youtube.com/watch?v=9jo51nJrO0k'/>}/>
           <Route exact path="/about" element={<About/>}/>
