@@ -8,7 +8,6 @@ const Header = () => {
         <ChakraProvider>
             <Heading display={'flex'} justifyContent={'center'} textColor={'red'} fontFamily={'monospace'}>WELCOME 🇱🇧</Heading>
         </ChakraProvider>
-        
     );
 }
 

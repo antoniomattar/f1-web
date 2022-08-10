@@ -4,6 +4,8 @@ import M3U8Player from './M3U8Player'
 import RefreshBtn from './RefreshBtn'
 import WhatsAppGrpBtn from './WhatsAppGrpBtn'
 import WhatsAppChatBtn from './WhatsAppChatBtn'
+import ClapprComponent, { ClapprPlayer } from './ClapprPlayer'
+import { Center } from '@chakra-ui/react'
 
 const Basket = (props) => {
   return (
@@ -11,7 +13,7 @@ const Basket = (props) => {
 
     <Title name='Basket Stream' />
     <WhatsAppGrpBtn/>
-    <M3U8Player link={props.link} name="Basket"/>
+    <ClapprPlayer link={props.link}/>
     <RefreshBtn/>
     
     <WhatsAppChatBtn/>
