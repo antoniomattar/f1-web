@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<F1English name='English' link= 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8'/>}/>
           <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= 'https://www.youtube.com/watch?v=9jo51nJrO0k'/>}/>
-          <Route exact path="/basketball" element={<Basket name='Basket' link= 'https://cllive.itworkscdn.net/lbcgrouplive/token=nva=1660166619~dirs=1~hash=06dc11720731d49a0651c/lbclive.smil/lbc_source_chunks.m3u8'/>}/>
+          <Route exact path="/basketball" element={<Basket name='Basket' link= 'https://cllive.itworkscdn.net/lbcdramalive/token=nva=1661441291~dirs=1~hash=09cdb8f1f14cb460cc1d0/drama/lb2_480p_chunks.m3u8'/>}/>
           <Route exact path="/about" element={<About/>}/>
         </Routes>
     </Router>
