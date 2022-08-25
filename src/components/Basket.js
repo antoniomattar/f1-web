@@ -1,11 +1,10 @@
 import React from 'react'
 import Title from './Title'
-import M3U8Player from './M3U8Player'
 import RefreshBtn from './RefreshBtn'
 import WhatsAppGrpBtn from './WhatsAppGrpBtn'
 import WhatsAppChatBtn from './WhatsAppChatBtn'
-import ClapprComponent, { ClapprPlayer } from './ClapprPlayer'
-import { Center } from '@chakra-ui/react'
+import ClapprPlayer from './ClapprPlayer'
+
 
 const Basket = (props) => {
   return (

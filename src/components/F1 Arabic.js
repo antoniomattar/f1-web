@@ -16,7 +16,6 @@ const F1Arabic = (props) => {
             <M3U8Player link={props.link} name="Arabic"/>
             <RefreshBtn/>
             <StreamChangeButton language='Arabic' newlang='English'/>
-            
             <WhatsAppChatBtn/>
         
     </React.Fragment>

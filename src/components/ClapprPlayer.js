@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Clappr from "clappr";
 import PlaybackRatePlugin from "clappr-playback-rate-plugin";
-import ClapprMarkersPlugin from "clappr-markers-plugin";
 import { Center } from "@chakra-ui/react";
 
 const ClapprComponent = ({ id, source, mute, height, width }) => {

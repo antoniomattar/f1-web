@@ -10,7 +10,6 @@ const M3U8Player = (props) => {
     <Center>
     <ReactPlayer url={source} playing={true} controls={true} />
     </Center>
-    
     </>
   )
 }
