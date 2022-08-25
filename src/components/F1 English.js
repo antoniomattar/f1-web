@@ -14,7 +14,7 @@ const F1English = (props) => {
     <React.Fragment>
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
-          <M3U8Player link={props.link} name='English'/>
+          <ClapprPlayer link={props.link}/>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
