@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Clappr from "clappr";
 import PlaybackRatePlugin from "clappr-playback-rate-plugin";
+import QualitySelector from 'clappr-markers-plugin'
 import { Center } from "@chakra-ui/react";
 
 const ClapprComponent = ({ id, source, mute, height, width }) => {
@@ -13,16 +14,8 @@ const ClapprComponent = ({ id, source, mute, height, width }) => {
       mute,
       height,
       width,
-      plugins: [PlaybackRatePlugin],
-      playbackRateConfig: {
-        defaultValue: 1,
-        options: [
-          { value: 0.5, label: "0.5x" },
-          { value: 1, label: "1x" },
-          { value: 2, label: "2x" }
-        ]
-        // rateSuffix: 'x',
-      }
+      autoplay: true,
+      plugins: [QualitySelector],
     });
 
     clappr_player.getPlugin("markers-plugin");
@@ -47,9 +40,9 @@ export const ClapprPlayer = (props) => {
     <ClapprComponent
         id="video"
         source= {props.link}
-        height={360}
-        width={640}
-        mute={true}
+        height={window.screen.availHeight}
+        width={window.screen.availWidth}
+        autoplay={true}
       />
     </Center>
       
