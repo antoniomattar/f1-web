@@ -5,6 +5,7 @@ import WhatsAppGrpBtn from './WhatsAppGrpBtn'
 import WhatsAppChatBtn from './WhatsAppChatBtn'
 import ClapprPlayer from './ClapprPlayer'
 import M3U8Player from './M3U8Player'
+import Player from './Player'
 
 
 const Basket = (props) => {
@@ -13,7 +14,7 @@ const Basket = (props) => {
 
     <Title name='Basket Stream' />
     <WhatsAppGrpBtn/>
-    <ClapprPlayer link={props.link}/>
+    <M3U8Player  link={props.link} name="Arabic"/>
     <RefreshBtn/>
     
     <WhatsAppChatBtn/>
