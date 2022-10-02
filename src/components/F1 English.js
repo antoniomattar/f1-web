@@ -1,7 +1,6 @@
 import React from "react";
 import StreamChangeButton from './StreamChangeButton';
 import Title from "./Title";
-import ClapprPlayer from "./ClapprPlayer";
 import M3U8Player from "./M3U8Player";
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
