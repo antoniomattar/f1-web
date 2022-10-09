@@ -20,8 +20,8 @@ function App() {
       <Menu/>
       <Router>
         <Routes>
-          <Route exact path="/" element={<F1English name='English' link= 'http://dcees.azureedge.net/live/NTQxMg==/chunks.m3u8'/>}/>
-          <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= 'http://dcees.azureedge.net/live/NTQxMg==/chunks.m3u8'/>}/>
+          <Route exact path="/" element={<F1English name='English' link= 'https://webudi.openhd.lol/ddy5/premium60/tracks-v1a1/mono.m3u8'/>}/>
+          <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= 'https://webudi.openhd.lol/ddy5/premium60/tracks-v1a1/mono.m3u8'/>}/>
           <Route exact path="/basketball" element={<Basket name='Basket' link= 'https://cllive.itworkscdn.net/lbcdramalive/token=nva=1661785795~dirs=1~hash=01d143e9f08fff5fdc7cc/drama/lb2_360p_chunks.m3u8'/>}/>
           <Route exact path="/about" element={<About/>}/>
         </Routes>
