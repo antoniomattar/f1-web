@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Clappr from "clappr";
-import QualitySelector from 'clappr-markers-plugin'
+import PlaybackRatePlugin from "clappr-playback-rate-plugin";
+import ClapprMarkersPlugin from "clappr-markers-plugin";
 import { Center } from "@chakra-ui/react";
 
 const ClapprComponent = ({ id, source, mute, height, width }) => {
@@ -13,8 +14,24 @@ const ClapprComponent = ({ id, source, mute, height, width }) => {
       mute,
       height,
       width,
-      autoplay: true,
-      plugins: [QualitySelector],
+      plugins: [PlaybackRatePlugin, ClapprMarkersPlugin],
+      markersPlugin: {
+        markers: [
+          new ClapprMarkersPlugin.StandardMarker(0, "The beginning!"),
+          new ClapprMarkersPlugin.StandardMarker(5, "Something interesting."),
+          new ClapprMarkersPlugin.StandardMarker(9, "The conclusion.")
+        ],
+        tooltipBottomMargin: 17 // optional
+      },
+      playbackRateConfig: {
+        defaultValue: 1,
+        options: [
+          { value: 0.5, label: "0.5x" },
+          { value: 1, label: "1x" },
+          { value: 2, label: "2x" }
+        ]
+        // rateSuffix: 'x',
+      }
     });
 
     clappr_player.getPlugin("markers-plugin");
@@ -34,18 +51,18 @@ const ClapprComponent = ({ id, source, mute, height, width }) => {
 
 export const ClapprPlayer = (props) => {
   return (
-    
-    <Center>
-    <ClapprComponent
+    <div>
+      <Center>
+      <ClapprComponent
         id="video"
-        source= {props.link}
-        height={window.screen.availHeight}
-        width={window.screen.availWidth}
-        autoplay={true}
+        source={props.link}
+        height={360}
+        width={640}
+        mute={true}
       />
-    </Center>
+      </Center>
       
-
+    </div>
   );
 };
 

@@ -5,6 +5,7 @@ import M3U8Player from "./M3U8Player";
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
+import ClapprPlayer from "./ClapprPlayer";
 
 
 const F1English = (props) => {
@@ -14,7 +15,7 @@ const F1English = (props) => {
     <React.Fragment>
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
-          <M3U8Player link={props.link}/>
+          <ClapprPlayer link={props.link}/>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
