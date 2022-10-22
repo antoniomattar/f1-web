@@ -20,7 +20,7 @@ function App() {
       <Menu/>
       <Router>
         <Routes>
-          <Route exact path="/" element={<F1English name='English' link= 'https://22assia.com/hls/149.m3u8?md5=-z9I0cvTZo74Uz7EVC2Edw&expires=1666469082'/>}/>
+          <Route exact path="/" element={<F1English name='English' link= 'https://ssss42.jokerplayer747.xyz:8081/live/vskysf1lsh.m3u8?e=1666471047&st=a8ldVRkarB22r78YNpnoxQ'/>}/>
           <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= 'https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8'/>}/>
           <Route exact path="/basketball" element={<Basket name='Basket' link= 'https://cllive.itworkscdn.net/lbcdramalive/token=nva=1661785795~dirs=1~hash=01d143e9f08fff5fdc7cc/drama/lb2_360p_chunks.m3u8'/>}/>
           <Route exact path="/about" element={<About/>}/>
