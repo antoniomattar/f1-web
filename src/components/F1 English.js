@@ -6,6 +6,7 @@ import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import ClapprPlayer from "./ClapprPlayer";
+import { Center } from "@chakra-ui/react";
 
 
 const F1English = (props) => {
@@ -15,7 +16,9 @@ const F1English = (props) => {
     <React.Fragment>
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
-          <ClapprPlayer link={props.link}/>
+          <Center>
+          <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          </Center>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
