@@ -17,12 +17,13 @@ const F1English = (props) => {
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
           <Center>
-          <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay" allowfullscreen></iframe>
+          <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
           </Center>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
     </React.Fragment>
+
     
   );
 };
