@@ -12,11 +12,11 @@ import About from "./About"
 import Header from './Header';
 import Menu from './Menu';
 import Footer from './Footer';
+import { Center } from '@chakra-ui/react';
 
 function App() {
   return (
     <React.Fragment>
-      <Header/>
       <Menu/>
       <Router>
         <Routes>

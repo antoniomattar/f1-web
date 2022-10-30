@@ -16,21 +16,23 @@ const F1English = (props) => {
     <React.Fragment>
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
-          <Center>
-          <iframe align="left" width="100%" height="560px" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-          <iframe align="right" src="https://deadsimplechat.com/Oc1Wrsofi" width="auto" height="500"></iframe>
-          </Center>
           <ChakraProvider>
+            <Divider orientation='horizontal' />
+            <Center>
+          <iframe width="560" height="315px" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            </Center>
+            <Center>
+          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="https://www.formula1.com/en/vote.html">VOTE FOR DRIVER OF THE DAY</a></Button>
+          </Center>
+         <Divider orientation='horizontal' />
+            <Center>
+          <iframe src="https://deadsimplechat.com/Oc1Wrsofi" width="80%" height="400px" ></iframe>
+            </Center>
             <Divider orientation='horizontal' />
           </ChakraProvider>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
-          <ChakraProvider>
-          <Center>
-          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="https://www.formula1.com/en/vote.html">VOTE FOR DRIVER OF THE DAY</a></Button>
-          </Center>
-          </ChakraProvider>
           
     </React.Fragment>
 
