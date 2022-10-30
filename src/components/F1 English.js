@@ -18,6 +18,7 @@ const F1English = (props) => {
           <WhatsAppGrpBtn/>
           <Center>
           <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          <iframe src="https://deadsimplechat.com/Oc1Wrsofi" width="315" height="315"></iframe>
           </Center>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
