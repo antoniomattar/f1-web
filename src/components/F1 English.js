@@ -6,7 +6,7 @@ import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import ClapprPlayer from "./ClapprPlayer";
-import { Button, Center, ChakraProvider } from "@chakra-ui/react";
+import { Button, Center, ChakraProvider,Divider} from "@chakra-ui/react";
 
 
 const F1English = (props) => {
@@ -17,9 +17,12 @@ const F1English = (props) => {
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
           <Center>
-          <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-          <iframe src="https://deadsimplechat.com/Oc1Wrsofi" width="315" height="315"></iframe>
+          <iframe align="left" width="50%" height="315px" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          <iframe align="right" src="https://deadsimplechat.com/Oc1Wrsofi" width="50%" height="315"></iframe>
           </Center>
+          <ChakraProvider>
+            <Divider orientation='horizontal' />
+          </ChakraProvider>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
