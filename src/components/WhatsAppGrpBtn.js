@@ -5,7 +5,7 @@ const WhatsAppGrpBtn = () => {
   return (
     <ChakraProvider>
             <Center>
-    <Button colorScheme='green' justifySelf={"center"} margin="2.5"> <Link href="https://chat.whatsapp.com/KFlYV2V0xrIHYC0koe7VBE">JOIN OUR WHATSAPP GROUP</Link> </Button>
+    <Button colorScheme='green' justifySelf={"center"} margin="2.5"> <a href="https://chat.whatsapp.com/KFlYV2V0xrIHYC0koe7VBE">JOIN OUR WHATSAPP GROUP</a> </Button>
         </Center>
         </ChakraProvider>
   )

@@ -6,7 +6,7 @@ import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import ClapprPlayer from "./ClapprPlayer";
-import { Center } from "@chakra-ui/react";
+import { Button, Center, ChakraProvider } from "@chakra-ui/react";
 
 
 const F1English = (props) => {
@@ -22,6 +22,12 @@ const F1English = (props) => {
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
+          <ChakraProvider>
+          <Center>
+          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="https://www.formula1.com/en/vote.html">VOTE FOR DRIVER OF THE DAY</a></Button>
+          </Center>
+          </ChakraProvider>
+          
     </React.Fragment>
 
     
