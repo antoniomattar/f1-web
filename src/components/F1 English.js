@@ -18,16 +18,12 @@ const F1English = (props) => {
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
           <ChakraProvider>
-            <Divider orientation='horizontal' />
+          <Divider orientation='horizontal' />
             <Center>
-          <iframe width="355" height="200" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+              <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
             </Center>
           <DOTDBtn/>
-         <Divider orientation='horizontal' />
-            <Center>
-          <iframe src="https://deadsimplechat.com/Oc1Wrsofi" width="80%" height="320" ></iframe>
-            </Center>
-            <Divider orientation='horizontal' />
+          <Divider orientation='horizontal' />
           </ChakraProvider>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
