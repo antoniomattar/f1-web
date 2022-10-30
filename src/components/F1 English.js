@@ -17,8 +17,8 @@ const F1English = (props) => {
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
           <Center>
-          <iframe align="left" width="50%" height="315px" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-          <iframe align="right" src="https://deadsimplechat.com/Oc1Wrsofi" width="50%" height="315"></iframe>
+          <iframe align="left" width="100%" height="560px" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          <iframe align="right" src="https://deadsimplechat.com/Oc1Wrsofi" width="auto" height="500"></iframe>
           </Center>
           <ChakraProvider>
             <Divider orientation='horizontal' />
