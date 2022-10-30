@@ -5,6 +5,8 @@ import M3U8Player from "./M3U8Player";
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
+import ClapprPlayer from "./ClapprPlayer";
+import { Center } from "@chakra-ui/react";
 
 
 const F1English = (props) => {
@@ -14,11 +16,14 @@ const F1English = (props) => {
     <React.Fragment>
           <Title name='English Stream' />
           <WhatsAppGrpBtn/>
-          <M3U8Player link={props.link}/>
+          <Center>
+          <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          </Center>
           <RefreshBtn/>
           <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
     </React.Fragment>
+
     
   );
 };
