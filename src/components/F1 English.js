@@ -7,6 +7,7 @@ import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import ClapprPlayer from "./ClapprPlayer";
 import { Button, Center, ChakraProvider,Divider} from "@chakra-ui/react";
+import DOTDBtn from "./DOTDBtn";
 
 
 const F1English = (props) => {
@@ -19,14 +20,12 @@ const F1English = (props) => {
           <ChakraProvider>
             <Divider orientation='horizontal' />
             <Center>
-          <iframe width="560" height="315px" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+          <iframe width="355" height="200" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
             </Center>
-            <Center>
-          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="https://www.formula1.com/en/vote.html">VOTE FOR DRIVER OF THE DAY</a></Button>
-          </Center>
+          <DOTDBtn/>
          <Divider orientation='horizontal' />
             <Center>
-          <iframe src="https://deadsimplechat.com/Oc1Wrsofi" width="80%" height="400px" ></iframe>
+          <iframe src="https://deadsimplechat.com/Oc1Wrsofi" width="80%" height="320" ></iframe>
             </Center>
             <Divider orientation='horizontal' />
           </ChakraProvider>
