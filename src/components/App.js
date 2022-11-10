@@ -20,9 +20,9 @@ function App() {
       <Menu/>
       <Router>
         <Routes>
-          <Route exact path="/" element={<F1English name='English' link= '//ok.ru/videoembed/5012624580210'/>}/>
-          <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= '//ok.ru/videoembed/5012624580210'/>}/>
-          <Route exact path="/basketball" element={<Basket name='Basket' link= '//ok.ru/videoembed/5012624580210'/>}/>
+          <Route exact path="/" element={<F1English name='English' link= '//ok.ru/videoembed/5076762762866'/>}/>
+          <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= '//ok.ru/videoembed/5076762762866'/>}/>
+          <Route exact path="/basketball" element={<Basket name='Basket' link= '//ok.ru/videoembed/5076762762866'/>}/>
           <Route exact path="/about" element={<About/>}/>
         </Routes>
     </Router>
