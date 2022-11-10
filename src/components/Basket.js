@@ -1,9 +1,13 @@
-import React from 'react'
-import Title from './Title'
-import RefreshBtn from './RefreshBtn'
-import WhatsAppGrpBtn from './WhatsAppGrpBtn'
-import WhatsAppChatBtn from './WhatsAppChatBtn'
-import M3U8Player from './M3U8Player'
+import React from "react";
+import StreamChangeButton from './StreamChangeButton';
+import Title from "./Title";
+import M3U8Player from "./M3U8Player";
+import RefreshBtn from "./RefreshBtn";
+import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
+import WhatsAppChatBtn from "./WhatsAppChatBtn";
+import ClapprPlayer from "./ClapprPlayer";
+import { Button, Center, ChakraProvider,Divider} from "@chakra-ui/react";
+import DOTDBtn from "./DOTDBtn"
 
 const Basket = (props) => {
   return (
