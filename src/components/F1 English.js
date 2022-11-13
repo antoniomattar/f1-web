@@ -15,17 +15,19 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
+      <ChakraProvider>
+        <Center>
           <Heading lineHeight='tall'>
             <Highlight
               query='Lebanon'
               styles={{ px: '2', py: '1', rounded: 'full', bg: 'red.100' }}
             >
-              To watch Lebanon vs India, click here ⬇️.
+              To watch Lebanon vs India, click here ⬇️
             </Highlight>
           </Heading>  
           <Button size="s" colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH LEBAN🏀N🏀</a></Button>
+        </Center>
           <WhatsAppGrpBtn/>
-          <ChakraProvider>
           <Divider orientation='horizontal' />
             <Center>
               <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
