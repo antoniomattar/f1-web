@@ -6,7 +6,7 @@ import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import ClapprPlayer from "./ClapprPlayer";
-import { Button, Center, ChakraProvider,Divider} from "@chakra-ui/react";
+import { Button, Center, ChakraProvider,Divider, Heading, Highlight} from "@chakra-ui/react";
 import DOTDBtn from "./DOTDBtn";
 
 
@@ -16,13 +16,13 @@ const F1English = (props) => {
     
     <React.Fragment>
           <Heading lineHeight='tall'>
-          <Highlight
-            query='Lebanon'
-            styles={{ px: '2', py: '1', rounded: 'full', bg: 'red.100' }}
-          >
-            To watch Lebanon vs India, click here ⬇️.
-          </Highlight>
-        </Heading>  
+            <Highlight
+              query='Lebanon'
+              styles={{ px: '2', py: '1', rounded: 'full', bg: 'red.100' }}
+            >
+              To watch Lebanon vs India, click here ⬇️.
+            </Highlight>
+          </Heading>  
           <Button size="s" colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH LEBAN🏀N🏀</a></Button>
           <WhatsAppGrpBtn/>
           <ChakraProvider>
