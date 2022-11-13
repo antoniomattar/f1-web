@@ -15,7 +15,8 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
-          <Title name='⬆️⬆️⬆️ Basketball game ⬆️⬆️⬆️' />
+          <Title name='⬇️⬇️⬇️ TO WATCH 🏀 BASKETBALL STREAM CLICK HERE ⬇️⬇️⬇️' />    
+          <a className="item" href="./" >WATCH LEBANON VS INDIA</a> 
           <WhatsAppGrpBtn/>
           <ChakraProvider>
           <Divider orientation='horizontal' />
