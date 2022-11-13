@@ -26,7 +26,7 @@ const F1English = (props) => {
           </Heading>
           <Divider orientation='horizontal' />
           <Center>
-          <Button size="l" colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH LEBAN🏀N🏀</a></Button>
+          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH LEBAN🏀N🏀</a></Button>
           </Center>
           <WhatsAppGrpBtn/>
           <Divider orientation='horizontal' />
