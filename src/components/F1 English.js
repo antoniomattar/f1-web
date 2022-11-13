@@ -22,9 +22,10 @@ const F1English = (props) => {
               query='Lebanon'
               styles={{ px: '2', py: '1', rounded: 'full', bg: 'red.100' }}
             >
-              To watch Lebanon vs India, click here ⬇️
+            ⬇️ Lebanon's 🏀 game ⬇️
             </Highlight>
-          </Heading>  
+          </Heading>
+          <Divider orientation='horizontal' />
           <Button size="s" colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH LEBAN🏀N🏀</a></Button>
         </Center>
           <WhatsAppGrpBtn/>
