@@ -16,6 +16,7 @@ const F1English = (props) => {
     
     <React.Fragment>
       <ChakraProvider>
+        <Center>
           <Heading lineHeight='tall'>
             <Highlight
               query='Lebanon'
@@ -24,6 +25,7 @@ const F1English = (props) => {
             ⬇️ Lebanon's 🏀 game ⬇️
             </Highlight>
           </Heading>
+        </Center>
           <Divider orientation='horizontal' />
           <Center>
           <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH LEBAN🏀N🏀</a></Button>
