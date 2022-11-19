@@ -13,6 +13,7 @@ import Header from './Header';
 import Menu from './Menu';
 import Footer from './Footer';
 import { Center } from '@chakra-ui/react';
+import PageNotFound from './PageNotFound';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= '//ok.ru/videoembed/5080838315634'/>}/>
           <Route exact path="/basketball" element={<Basket name='Basket' link= '//ok.ru/videoembed/5095751884402'/>}/>
           <Route exact path="/about" element={<About/>}/>
+          <Route path="*" element={<PageNotFound/>}/>
         </Routes>
     </Router>
     <Footer/>
