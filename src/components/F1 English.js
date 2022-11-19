@@ -19,7 +19,7 @@ const F1English = (props) => {
           <Title name="English Stream"/>
           <Divider orientation='horizontal' />
           <Center>
-          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH LEBAN🏀N🏀</a></Button>
+          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH BASKETBALL🏀</a></Button>
           </Center>
           <WhatsAppGrpBtn/>
           <Divider orientation='horizontal' />
