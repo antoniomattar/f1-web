@@ -14,6 +14,7 @@ import Menu from './Menu';
 import Footer from './Footer';
 import { Center } from '@chakra-ui/react';
 import PageNotFound from './PageNotFound';
+import WorldCup from './WorldCup';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Menu/>
       <Router>
         <Routes>
+          <Route path="/worldcup" element={<WorldCup name="WorldCup" link="https://www.youtube.com/embed/e8laLiWolGg"/>} />
           <Route exact path="/" element={<F1English name='English' link= '//ok.ru/videoembed/5080838315634'/>}/>
           <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= '//ok.ru/videoembed/5080838315634'/>}/>
           <Route exact path="/basketball" element={<Basket name='Basket' link= '//ok.ru/videoembed/5095751884402'/>}/>
