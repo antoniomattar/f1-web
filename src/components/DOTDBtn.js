@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Center, ChakraProvider,Link } from '@chakra-ui/react'
+import { Button, Center } from '@chakra-ui/react'
 
 export class DOTDBtn extends Component {
   render() {

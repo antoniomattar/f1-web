@@ -9,10 +9,8 @@ import F1Arabic from './F1 Arabic'
 import F1English from './F1 English'
 import Basket from './Basket'
 import About from "./About"
-import Header from './Header';
 import Menu from './Menu';
 import Footer from './Footer';
-import { Center } from '@chakra-ui/react';
 import PageNotFound from './PageNotFound';
 import WorldCup from './WorldCup';
 
