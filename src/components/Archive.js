@@ -8,28 +8,14 @@ import { Center, ChakraProvider,Divider} from "@chakra-ui/react";
 
 const Basket = (props) => {
   return (
-    // <React.Fragment>
-
-    // <Title name='Basket Stream' />
-    // <WhatsAppGrpBtn/>
-    // <M3U8Player  link={props.link} name="Arabic"/>
-    // <RefreshBtn/>
-    
-    // <WhatsAppChatBtn/>
-      
-    // </React.Fragment>
     <React.Fragment>
-          <Title name='Basketball🏀 Stream' />
+          <Title name='Archived Streams' />
           <WhatsAppGrpBtn/>
           <ChakraProvider>
           <Divider orientation='horizontal' />
-            <Center>
-              <iframe width="560" height="315" src={props.link} frameborder="0" allow="autoplay"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-            </Center>
+            <h1>Sorry, no archives for the moment!</h1>
           <Divider orientation='horizontal' />
           </ChakraProvider>
-          <RefreshBtn/>
-          <StreamChangeButton language='English' newlang='Arabic'/>
           <WhatsAppChatBtn/>
           
     </React.Fragment>

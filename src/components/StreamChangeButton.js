@@ -21,8 +21,8 @@ const StreamChangeButton = (props) => {
     return (
         <ChakraProvider>
             <Center>
-    <Button colorScheme='blue' justifySelf={"center"} onClick={() => ChangeStreamLanguage()} margin='2.5'>Change to {props.newlang} </Button>
-        </Center>
+                <Button colorScheme='blue' justifySelf={"center"} onClick={() => ChangeStreamLanguage()} margin='2.5'>Change to {props.newlang} </Button>
+            </Center>
         </ChakraProvider>
         
         

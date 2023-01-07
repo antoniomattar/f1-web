@@ -7,7 +7,7 @@ import {
 import './App.css';
 import F1Arabic from './F1 Arabic'
 import F1English from './F1 English'
-import Basket from './Basket'
+import Archive from './Archive'
 import About from "./About"
 import Menu from './Menu';
 import Footer from './Footer';
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<F1English name='English' link= '//ok.ru/videoembed/5148578881138?nochat=1'/>}/>
           <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= '//ok.ru/videoembed/5148578881138'/>}/>
-          <Route exact path="/basketball" element={<Basket name='Basket' link= '//ok.ru/videoembed/5095751884402'/>}/>
+          <Route exact path="/archive" element={<Archive name='Archive'/>}/>
           <Route exact path="/about" element={<About/>}/>
           <Route path="*" element={<PageNotFound/>}/>
         </Routes>

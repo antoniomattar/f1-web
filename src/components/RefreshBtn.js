@@ -15,15 +15,17 @@ const RefreshBtn = () => {
       return (
         <ChakraProvider>
             <Center>
-    <Button colorScheme='blue'  margin="2.5" justifySelf={"center"} onClick={async () => {
-            toast({
-              containerStyle: {
-               
-              },
-            });
-            window.location.reload();
-          }}>REFRESH</Button>
-        </Center>
+                    <Button colorScheme='blue'  margin="2.5" justifySelf={"center"} onClick={async () => {
+                    toast({
+                      containerStyle: {
+                      
+                      },
+                    });
+                    window.location.reload();
+                  }}>
+                    REFRESH
+                    </Button>
+          </Center>
         </ChakraProvider>
       )
     }
