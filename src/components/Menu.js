@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <div className="ui three item menu">
             <a className="item" href="./" >F1 🏎</a> 
-            <a className="item" href='./basketball'>BASKETBALL</a> 
+            <a className="item" href='./archive'>ARCHIVES</a> 
             <a className="item" href="./about">ABOUT</a> 
         </div>
     );
