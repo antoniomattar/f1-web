@@ -19,8 +19,8 @@ function App() {
       <Menu/>
       <Router>
         <Routes>
-          <Route exact path="/" element={<F1English name='English' link= 'https://www.youtube.com/embed/_QmiNC9d788'/>}/>
-          <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= '//ok.ru/videoembed/5148578881138'/>}/>
+          <Route exact path="/" element={<F1English name='English' link= 'https://cllive.itworkscdn.net/lbcdramalive/token=nva=1677238744~dirs=1~hash=0ab33cee771cff73167ba/drama/lb2_360p_chunks.m3u8'/>}/>
+          <Route exact path="/arabic" element={<F1Arabic name='Arabic' link= 'https://cllive.itworkscdn.net/lbcdramalive/token=nva=1677238744~dirs=1~hash=0ab33cee771cff73167ba/drama/lb2_360p_chunks.m3u8'/>}/>
           <Route exact path="/archive" element={<Archive name='Archive'/>}/>
           <Route exact path="/about" element={<About/>}/>
           <Route path="*" element={<PageNotFound/>}/>
