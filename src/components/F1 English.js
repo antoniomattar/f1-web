@@ -6,7 +6,6 @@ import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import { Button, Center, ChakraProvider,Divider} from "@chakra-ui/react";
 import DOTDBtn from "./DOTDBtn";
-import M3U8Player from "./M3U8Player";
 
 
 const F1English = (props) => {
@@ -14,7 +13,7 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
-          <Title name='English Stream' />
+          <Title name='LEBANON VS PHILIPPINES🏀' />
             <WhatsAppGrpBtn/>
             <M3U8Player link={props.link} name="English"/>
             <RefreshBtn/>
