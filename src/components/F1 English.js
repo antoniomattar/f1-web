@@ -6,6 +6,7 @@ import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import { Button, Center, ChakraProvider,Divider} from "@chakra-ui/react";
 import DOTDBtn from "./DOTDBtn";
+import M3U8Player from "./M3U8Player";
 
 
 const F1English = (props) => {
