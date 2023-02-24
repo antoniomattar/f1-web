@@ -13,16 +13,12 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
-          <Title name="English Stream"/>
-          <Divider orientation='horizontal' />
-          <Center>
-          <Button colorScheme='red'  margin="2.5" justifySelf={"center"}><a href="./basketball">WATCH BASKETBALL🏀</a></Button>
-          </Center>
-          <WhatsAppGrpBtn/>
+          <Title name='English Stream' />
+            <WhatsAppGrpBtn/>
             <M3U8Player link={props.link} name="Arabic"/>
             <RefreshBtn/>
-          <StreamChangeButton language='English' newlang='Arabic'/>
-          <WhatsAppChatBtn/>
+            <StreamChangeButton language='Arabic' newlang='English'/>
+            <WhatsAppChatBtn/>
           
     </React.Fragment>
 
