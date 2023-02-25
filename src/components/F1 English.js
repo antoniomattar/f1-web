@@ -14,7 +14,7 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
-          <Title name='LEBANON VS PHILIPPINES🏀' />
+          <Title name='LEBANON VS NEW ZEALAND🏀' />
             <WhatsAppGrpBtn/>
             <M3U8Player link={props.link} name="English"/>
             <RefreshBtn/>
