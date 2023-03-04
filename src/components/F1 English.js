@@ -17,6 +17,7 @@ const F1English = (props) => {
           <Title name='PRACTICE 2 🏎️' />
             <WhatsAppGrpBtn/>
             <M3U8Player link={props.link} name="English"/>
+            <iframe width="640" height="360" src="//ok.ru/videoembed/5529139748466?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
             <RefreshBtn/>
             <StreamChangeButton language='English' newlang='Arabic'/>
             <WhatsAppChatBtn/>
