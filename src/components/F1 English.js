@@ -16,12 +16,20 @@ const F1English = (props) => {
     <React.Fragment>
           <Title name='🏎️  Saudi🇸🇦GP  🏎️' />
             <WhatsAppGrpBtn/>
+
+            <h2>STREAM 1</h2>
+
             <Center>
-              <h2>STREAM 1</h2>
             <iframe width="640" height="360" src="//ok.ru/videoembed/5640913428082?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-              <h2>STREAM 2</h2>
-              <M3U8Player url="https://ds1.sportea.online/stream/ch10/index.fmp4.m3u8"/>
             </Center>
+
+            <h2>STREAM 2</h2>
+
+            <Center>
+            <M3U8Player url="https://ds1.sportea.online/stream/ch10/index.fmp4.m3u8"/>
+            </Center>
+
+
             <RefreshBtn/>
             <StreamChangeButton language='English' newlang='Arabic'/>
             <WhatsAppChatBtn/>
