@@ -26,7 +26,7 @@ const F1English = (props) => {
             <h2>STREAM 2</h2>
 
             <Center>
-            <M3U8Player url="https://ds1.sportea.online/stream/ch10/index.fmp4.m3u8"/>
+            <M3U8Player link="https://ds1.sportea.online/stream/ch10/index.fmp4.m3u8"/>
             </Center>
 
 
