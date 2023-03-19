@@ -17,13 +17,13 @@ const F1English = (props) => {
           <Title name='🏎️  Saudi🇸🇦GP  🏎️' />
             <WhatsAppGrpBtn/>
 
-            <h2>STREAM 1</h2>
+            <Title name="STREAM 1"/>
 
             <Center>
             <iframe width="640" height="360" src="//ok.ru/videoembed/5640913428082?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
             </Center>
 
-            <h2>STREAM 2</h2>
+            <Title name="STREAM 2"/>
 
             <Center>
             <M3U8Player link="https://ds1.sportea.online/stream/ch10/index.fmp4.m3u8"/>
