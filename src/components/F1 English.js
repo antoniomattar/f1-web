@@ -14,7 +14,7 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
-          <Title name='🏎️  Saudi🇸🇦GP  🏎️' />
+          <Title name='🏎️  Australian 🦘 GP  🏎️' />
             <WhatsAppGrpBtn/>
 
             <Title name="STREAM 1"/>

@@ -11,7 +11,9 @@ const Basket = (props) => {
           <WhatsAppGrpBtn/>
           <ChakraProvider>
           <Divider orientation='horizontal' />
-            <h1>Sorry, no archives for the moment!</h1>
+          <Center>
+          <h1>Sorry, no archives for the moment!</h1>
+          </Center>
           <Divider orientation='horizontal' />
           </ChakraProvider>
           <WhatsAppChatBtn/>
