@@ -28,7 +28,8 @@ const F1English = (props) => {
             <Title name="STREAM 2"/>
 
             <Center>
-            <iframe width="640" height="360" src="//ok.ru/videoembed/5759068085874?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <M3U8Player link="https://a12.azplay.me/hls/streama211531/index.m3u8?cst=cde4f7c59a25500f62bfb12d9a5b5ec1"/>
+            {/* <iframe width="640" height="360" src="//ok.ru/videoembed/5759068085874?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe> */}
             </Center>
 
 
