@@ -22,7 +22,7 @@ const F1English = (props) => {
             <Title name="STREAM 1"/>
 
             <Center>
-            <M3U8Player link="https://ed-t1.edghst.me/plyvivo/wexuvug0p040gu20veka/chunklist.m3u8"/>
+            <M3U8Player link="https://ddy6.onlinewebtv.lol/ddy6/premium424/tracks-v1a1/mono.m3u8"/>
             </Center>
 
             <Title name="STREAM 2"/>
