@@ -22,7 +22,7 @@ const F1English = (props) => {
             <Title name="STREAM 1"/>
 
             <Center>
-            <iframe width="640" height="360" src="//ok.ru/videoembed/5759078637170?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe width="640" height="360" src="//ok.ru/videoembed/5759078637170?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
             </Center>
 
             <Title name="STREAM 2"/>
