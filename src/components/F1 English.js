@@ -16,13 +16,13 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
-          <Title name='🏎️  Australian 🦘 GP  🏎️' />
+          <Title name='🏎️  Azerbijian GP  🏎️' />
             <WhatsAppGrpBtn/>
 
             <Title name="STREAM 1"/>
 
             <Center>
-            <M3U8Player link="https://ssss79.jokerplayer7.online:8081/live/vskysf1lsh.m3u8?e=1680418943&st=ixxIA1LeskwDOLZluU37uA"/>
+            <M3U8Player link="//ok.ru/videoembed/5759078637170"/>
             </Center>
 
             <Title name="STREAM 2"/>
