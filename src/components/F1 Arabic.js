@@ -8,12 +8,28 @@ import WhatsAppChatBtn from "./WhatsAppChatBtn";
 const F1Arabic = (props) => {
 
   return (
-    <div className="grid justify-center">
-            <h1 className=" mx-auto">🏎️  Arabic Stream  🏎️</h1>
-            <WhatsAppGrpBtn/>
-            <iframe  className=" w-fit border-solid border-8 border-red-600 rounded-xl m-6" src="//ok.ru/videoembed/4855918829257?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    <div>
+
+
+          <h1 className=" text-3xl mx-auto flex justify-center m-6 font-extrabold font-sans text-green-900">🏎️  Azerbaijan GP  🏎️</h1>
+              <div className="grid justify-center mx-auto w-11/12">
+
+                <div className="grid justify-center">
+                    <h2 className="mx-auto font-bold" > STREAM 1 </h2>
+                    <iframe className=" w-fit border-solid border-8 border-red-600 rounded-xl m-6" src="//ok.ru/videoembed/4855918829257?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    {/* 5759078440562 */}
+                </div>
+                <StreamChangeButton language='Arabic' newlang='English'/>
+                <div className="grid justify-center">
+                    <h2 className="mx-auto font-bold" > STREAM 2 </h2>
+                    <iframe className=" w-fit border-solid border-8 border-red-600 rounded-xl m-6" src="//ok.ru/videoembed/4855918829257?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    {/* <M3U8Player link={props.link}/> */}
+                </div>
+
+
+              </div>
+
             <RefreshBtn/>
-            <StreamChangeButton language='Arabic' newlang='English'/>
             <WhatsAppChatBtn/>
         
     </div>
@@ -22,3 +38,4 @@ const F1Arabic = (props) => {
 };
 
 export default F1Arabic;
+
