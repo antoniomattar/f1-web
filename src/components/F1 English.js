@@ -54,11 +54,8 @@ const F1English = (props) => {
         </div>
       </div>
       <WhatsAppChatBtn />
-      <div>
-        <RaceDetails />
-      </div>
-      <div>
-        f
+      <div className=' m-6'>
+        <RaceDetails/>
       </div>
     </div>
     

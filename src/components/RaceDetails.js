@@ -1,34 +1,49 @@
-export default async function RaceDetails() {
-  const data = await fetch('https://ergast.com/api/f1/current.json').then(
-    (res) => res.json()
-  );
-  const races = data['MRData']['RaceTable']['Races'];
+import React, { Component } from "react";
 
-  // write a function that loops over the races and check which one is the closest to the current date without being in the past
+class RaceDetails extends Component {
+  state = {
+    closestRace: null,
+  };
 
-  function getClosestRace() {
+  async componentDidMount() {
+    const data = await fetch("https://ergast.com/api/f1/current.json").then(
+      (res) => res.json()
+    );
+    const races = data["MRData"]["RaceTable"]["Races"];
+    const closestRace = this.getClosestRace(races);
+    this.setState({ closestRace });
+  }
+
+  getClosestRace(races) {
     const today = new Date();
-    console.log(today.getTime());
-
-    let closestRaceDateIndex = 0;
-    let closestRaceDate = new Date(races[closestRaceDateIndex]['date']);
 
     for (let index = 0; index < races.length; index++) {
       const currentRace = races[index];
-      const currentRaceDate = new Date(currentRace['date']);
-      console.log(currentRaceDate.getTime());
-      if (
-        currentRaceDate.getTime() >= today.getTime() &&
-        Math.abs(currentRaceDate.getTime() - today.getTime()) <
-          Math.abs(closestRaceDate.getTime() - today.getTime())
-      ) {
-        closestRaceDateIndex = index;
+      const currentRaceDate = new Date(currentRace["date"]);
+      if (currentRaceDate.getTime() > today.getTime()) {
+        return currentRace;
       }
     }
-    return races[closestRaceDateIndex];
+    return races[0];
   }
 
-  console.log(getClosestRace());
-
-  return <div className="mx-auto flex w-11/12 justify-center">hi</div>;
+  render() {
+    return (
+      <div className="grid justify-center items-center align-middle">
+        <h1 className="text-3xl font-bold text-center"> RACE DETAILS </h1>
+        <div className=" bg-green-700 text-white rounded-2xl p-6">
+          <h2 className="text-2xl font-semibold">NAME: {this.state.closestRace ? this.state.closestRace["raceName"] : "Loading..."} </h2>
+          <h3 className="text-xl font-semibold">CIRCUIT NAME: {this.state.closestRace ? this.state.closestRace["Circuit"]["circuitName"] : "Loading..."} </h3>
+          <h3 className="text-xl font-semibold">LOCATION: {this.state.closestRace ? this.state.closestRace["Circuit"]["Location"]["locality"] : "Loading..."} </h3>
+          <h3 className="text-xl font-semibold">COUNTRY: {this.state.closestRace ? this.state.closestRace["Circuit"]["Location"]["country"] : "Loading..."} </h3>
+          <h3 className="text-xl font-semibold">DATE: {this.state.closestRace ? this.state.closestRace["date"] : "Loading..."} </h3>
+          <h3 className="text-xl font-semibold">TIME: {this.state.closestRace ? this.state.closestRace["time"] : "Loading..."} </h3>
+          <h3 className="text-xl font-semibold">SEASON {this.state.closestRace ? this.state.closestRace["season"] : "Loading..."} </h3>
+        </div>
+      </div>
+      
+    );
+  }
 }
+
+export default RaceDetails;
