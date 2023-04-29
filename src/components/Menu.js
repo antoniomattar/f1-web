@@ -34,9 +34,9 @@ const Menu = () => {
   </div>
 </nav> */}
 <nav class="border-gray-200 px-2 border-b">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+  <div class="max-w-screen-xl flex flex-wrap justify-center mx-auto p-4">
   <a href="./" class="flex items-center">
-      <img src={f1logo} class=" h-11  mr-3" alt="Flowbite Logo"/>
+      <img src={f1logo} class=" h-11  mr-3" alt="F1 Logo"/>
   </a>
   <div class="flex md:order-2">
       <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
