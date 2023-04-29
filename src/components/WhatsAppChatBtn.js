@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const WhatsAppChatBtn = () => {
   return (
@@ -7,10 +7,10 @@ const WhatsAppChatBtn = () => {
       class="whatsapp_float"
       target="_blank"
       rel="noopener noreferrer"
-      >
+    >
       <i class="fa fa-whatsapp whatsapp-icon"></i>
     </a>
-  )
-}
+  );
+};
 
-export default WhatsAppChatBtn
+export default WhatsAppChatBtn;
