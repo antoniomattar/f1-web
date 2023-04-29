@@ -3,6 +3,7 @@ import React from "react";
 import StreamChangeButton from './StreamChangeButton';
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
+import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 // import DOTDBtn from "./DOTDBtn";
 // import M3U8Player from "./M3U8Player";
 
@@ -25,6 +26,8 @@ const F1English = (props) => {
                     {/* 5759078440562 */}
                 </div>
                 <StreamChangeButton language='English' newlang='Arabic'/>
+                <WhatsAppGrpBtn/>
+                <RefreshBtn/>
                 <div className="grid justify-center">
                     <h2 className="mx-auto font-bold" > STREAM 2 </h2>
                     <iframe className=" w-fit border-solid border-8 border-red-600 rounded-xl m-6" src="//ok.ru/videoembed/5759078637170?nochat=1" frameborder="0" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
@@ -33,8 +36,6 @@ const F1English = (props) => {
 
 
               </div>
-
-            <RefreshBtn/>
             <WhatsAppChatBtn/>
         
     </div>

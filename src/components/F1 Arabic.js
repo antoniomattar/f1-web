@@ -4,6 +4,7 @@ import StreamChangeButton from './StreamChangeButton';
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import M3U8Player from "./M3U8Player";
+import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 
 const F1Arabic = (props) => {
 
@@ -20,6 +21,8 @@ const F1Arabic = (props) => {
                     {/* 5759078440562 */}
                 </div>
                 <StreamChangeButton language='Arabic' newlang='English'/>
+                <WhatsAppGrpBtn/>
+                <RefreshBtn/>
                 <div className="grid justify-center w-fit">
                     <h2 className="mx-auto font-bold" > STREAM 2 </h2>
                     <M3U8Player link={props.link}/>
@@ -28,7 +31,7 @@ const F1Arabic = (props) => {
 
               </div>
 
-            <RefreshBtn/>
+            
             <WhatsAppChatBtn/>
         
     </div>

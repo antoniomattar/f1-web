@@ -1,14 +1,9 @@
-import React from 'react'
-import { Button, Center, ChakraProvider } from '@chakra-ui/react'
-
-const WhatsAppGrpBtn = () => {
+export default function WhatsAppGrpBtn() {
   return (
-    <ChakraProvider>
-            <Center>
-              <Button size="xs" colorScheme='green' justifySelf={"center"} margin="2.5"> <a href="https://chat.whatsapp.com/Jw0CN2m2fNs6y3VsO8Riwm">JOIN OUR WHATSAPP GROUP</a> </Button>
-            </Center>
-    </ChakraProvider>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full mx-auto">
+      <a className=" hover:text-white " href="https://chat.whatsapp.com/Jw0CN2m2fNs6y3VsO8Riwm">
+        JOIN OUR WHATSAPP GROUP!
+      </a>
+    </button>
   )
 }
-
-export default WhatsAppGrpBtn
