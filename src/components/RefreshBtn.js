@@ -3,7 +3,7 @@ import { useToast, Button, ChakraProvider, Center} from '@chakra-ui/react'
 
 const RefreshBtn = () => {
     const toast = useToast({
-        position: 'top',
+        position: 'top-10',
         title: 'Stream is updated',
         containerStyle: {
           width: '800px',

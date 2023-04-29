@@ -5,7 +5,7 @@ import { Center, ChakraProvider,Divider} from "@chakra-ui/react";
 
 const Basket = (props) => {
   return (
-    <React.Fragment>
+    <div>
           <h1 className=" mx-auto">🏎️  ARCHIVES 🏎️</h1>
           <WhatsAppGrpBtn/>
           <ChakraProvider>
@@ -17,7 +17,7 @@ const Basket = (props) => {
           </ChakraProvider>
           <WhatsAppChatBtn/>
           
-    </React.Fragment>
+    </div>
   )
 }
 

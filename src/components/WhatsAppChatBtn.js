@@ -8,7 +8,7 @@ const WhatsAppChatBtn = () => {
       target="_blank"
       rel="noopener noreferrer"
       >
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      <i class="fa fa-whatsapp whatsapp-icon"></i>
     </a>
   )
 }

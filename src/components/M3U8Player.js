@@ -3,13 +3,12 @@ import ReactPlayer from 'react-player'
 import { Center } from '@chakra-ui/react';
 
 const M3U8Player = (props) => {
-  const source = props.link;
   
   return (
     <>
     <Center>
-      <div className='border-solid border-8 border-red-600 rounded-xl m-6'>
-        <ReactPlayer url={source} playing={true} controls={true} />
+      <div className='mx-auto w-fit border-solid border-8 border-red-600 rounded-xl m-6'>
+        <ReactPlayer url={props.link} playing={true} controls={true} width={300} height={300} />
       </div>
     </Center>
     </>
