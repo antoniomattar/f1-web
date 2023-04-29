@@ -16,7 +16,7 @@ const F1Arabic = (props) => {
 
                 <div className="grid justify-center">
                     <h2 className="mx-auto font-bold" > STREAM 1 </h2>
-                    <iframe className=" w-fit border-solid border-8 border-red-600 rounded-xl m-6" src="//ok.ru/videoembed/4855918829257?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    <iframe className=" w-fit border-solid border-8 border-red-600 rounded-xl m-6" src="//ok.ru/videoembed/4855918829257?nochat=1" frameborder="0" allow="autoplay" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                     {/* 5759078440562 */}
                 </div>
                 <StreamChangeButton language='Arabic' newlang='English'/>
