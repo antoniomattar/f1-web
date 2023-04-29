@@ -1,7 +1,7 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import StreamChangeButton from './StreamChangeButton';
 import RefreshBtn from "./RefreshBtn";
-import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 // import DOTDBtn from "./DOTDBtn";
 import M3U8Player from "./M3U8Player";
@@ -14,9 +14,10 @@ const F1English = (props) => {
 
   return (
     
-    <React.Fragment>
-          <h1 className=" text-6xl mx-auto flex justify-center m-2">🏎️  Azerbaijan GP  🏎️</h1>
-              <Divider name='Live streams'/>
+    <div>
+
+
+          <h1 className=" text-6xl mx-auto flex justify-center m-6 font-extrabold font-sans text-green-900">🏎️  Azerbaijan GP  🏎️</h1>
               <div className="grid justify-center mx-auto">
 
                 <div>
@@ -36,8 +37,8 @@ const F1English = (props) => {
             <RefreshBtn/>
             <StreamChangeButton language='English' newlang='Arabic'/>
             <WhatsAppChatBtn/>
-          
-    </React.Fragment>
+        
+    </div>
 
     
   );
