@@ -5,14 +5,15 @@ import RefreshBtn from './RefreshBtn';
 import StreamChangeButton from './StreamChangeButton';
 import WhatsAppChatBtn from './WhatsAppChatBtn';
 import WhatsAppGrpBtn from './WhatsAppGrpBtn';
+import RaceDetails from './RaceDetails';
 
 const F1Arabic = (props) => {
   return (
     <div>
-      <h1 className=" m-6 mx-auto flex justify-center font-sans text-3xl font-extrabold text-green-900">
-        🏎️ Azerbaijan GP 🏎️
-      </h1>
-      <div className="mx-auto grid w-11/12 justify-center">
+      <div className=' m-6'>
+        <RaceDetails/>
+      </div>
+      <div className="mx-auto grid md:flex w-11/12 justify-center">
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 1 </h2>
           <iframe
@@ -27,10 +28,12 @@ const F1Arabic = (props) => {
           ></iframe>
           {/* 5759078440562 */}
         </div>
-        <StreamChangeButton language="Arabic" newlang="English" />
-        <WhatsAppGrpBtn />
-        <RefreshBtn />
-        <div className="grid w-fit justify-center">
+        <div className="grid justify-center">
+          <StreamChangeButton language="Arabic" newlang="English" />
+          <WhatsAppGrpBtn />
+          <RefreshBtn />
+        </div>
+        <div className="m-6 grid w-fit justify-center">
           <h2 className="mx-auto font-bold"> STREAM 2 </h2>
           <M3U8Player link={props.link} />
         </div>
