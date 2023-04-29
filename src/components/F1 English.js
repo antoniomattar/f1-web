@@ -17,7 +17,7 @@ const F1English = (props) => {
       <div className=' m-6'>
         <RaceDetails/>
       </div>
-      <div className="mx-auto grid w-11/12 justify-center">
+      <div className="mx-auto grid md:flex w-11/12 justify-center">
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 1 </h2>
           <iframe
