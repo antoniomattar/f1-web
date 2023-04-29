@@ -1,12 +1,11 @@
 import React from "react";
 import StreamChangeButton from './StreamChangeButton';
-import Title from "./Title";
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
-import { Button, Center, ChakraProvider,Divider} from "@chakra-ui/react";
 // import DOTDBtn from "./DOTDBtn";
 import M3U8Player from "./M3U8Player";
+import Divider from "./Divider";
 
 
 // 5759078047346
@@ -16,22 +15,23 @@ const F1English = (props) => {
   return (
     
     <React.Fragment>
-          <Title name='🏎️  Azerbaijan GP  🏎️' />
-            <WhatsAppGrpBtn/>
+          <h1 className=" text-6xl mx-auto flex justify-center m-2">🏎️  Azerbaijan GP  🏎️</h1>
+              <Divider name='Live streams'/>
+              <div className="grid justify-center mx-auto">
 
-            <Title name="STREAM 1"/>
+                <div>
+                    <h2 className="mx-auto font-bold" > STREAM 1 </h2>
+                    <iframe className="border-solid border-8 border-red-600 rounded-xl m-6" width="640" height="360" src="//ok.ru/videoembed/5759078637170?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    {/* 5759078440562 */}
+                </div>
+                
+                <div>
+                    <h2 className="mx-auto font-bold" > STREAM 2 </h2>
+                    <M3U8Player link={props.link}/>
+                </div>
 
-            <Center>
-            <iframe width="640" height="360" src="//ok.ru/videoembed/5759078637170?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-            </Center>
 
-            <Title name="STREAM 2"/>
-
-            <Center>
-            <M3U8Player link={props.link}/>
-            {/* <iframe width="640" height="360" src="//ok.ru/videoembed/5759068085874?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe> */}
-            </Center>
-
+              </div>
 
             <RefreshBtn/>
             <StreamChangeButton language='English' newlang='Arabic'/>

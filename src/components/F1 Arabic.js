@@ -1,5 +1,4 @@
 import React from "react";
-import Title from "./Title";
 import StreamChangeButton from './StreamChangeButton';
 import RefreshBtn from "./RefreshBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
@@ -10,7 +9,7 @@ const F1Arabic = (props) => {
   return (
     
     <React.Fragment>
-            <Title name='Arabic Stream' />
+            <h1 className=" mx-auto">🏎️  Arabic Stream  🏎️</h1>
             <WhatsAppGrpBtn/>
             <iframe width="640" height="360" src="//ok.ru/videoembed/5529139748466?nochat=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen></iframe>
             <RefreshBtn/>

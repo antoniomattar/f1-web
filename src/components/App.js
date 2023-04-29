@@ -15,7 +15,7 @@ import PageNotFound from './PageNotFound';
 
 function App() {
   return (
-    <React.Fragment>
+    <div className='grid'>
       <Menu/>
       <Router>
         <Routes>
@@ -27,7 +27,7 @@ function App() {
         </Routes>
     </Router>
     <Footer/>
-    </React.Fragment>
+    </div>
     
     
     

@@ -1,5 +1,4 @@
 import React from "react";
-import Title from "./Title";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import { Center, ChakraProvider,Divider} from "@chakra-ui/react";
@@ -7,7 +6,7 @@ import { Center, ChakraProvider,Divider} from "@chakra-ui/react";
 const Basket = (props) => {
   return (
     <React.Fragment>
-          <Title name='Archived Streams' />
+          <h1 className=" mx-auto">🏎️  ARCHIVES 🏎️</h1>
           <WhatsAppGrpBtn/>
           <ChakraProvider>
           <Divider orientation='horizontal' />

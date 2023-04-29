@@ -8,7 +8,9 @@ const M3U8Player = (props) => {
   return (
     <>
     <Center>
-    <ReactPlayer url={source} playing={true} controls={true} />
+      <div className='border-solid border-4 border-red-600 rounded-xl m-6'>
+        <ReactPlayer url={source} playing={true} controls={true} />
+      </div>
     </Center>
     </>
   )

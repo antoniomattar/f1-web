@@ -3,7 +3,7 @@ import { Button, Center, ChakraProvider } from '@chakra-ui/react'
 import { useNavigate } from "react-router-dom";
 
 const StreamChangeButton = (props) => {
-    const [Language,setLanguage] = useState(props.language);
+    const [setLanguage] = useState(props.language);
     const navigate = useNavigate();
     function ChangeStreamLanguage() {
     if (props.newlang === "English") {
