@@ -16,7 +16,7 @@ const F1English = (props) => {
     <div>
 
 
-          <h1 className="mx-auto flex justify-center m-6 font-extrabold font-sans text-green-900">🏎️  Azerbaijan GP  🏎️</h1>
+          <h1 className=" text-3xl mx-auto flex justify-center m-6 font-extrabold font-sans text-green-900">🏎️  Azerbaijan GP  🏎️</h1>
               <div className="grid justify-center mx-auto w-11/12">
 
                 <div className="grid justify-center">
