@@ -14,10 +14,10 @@ import WhatsAppGrpBtn from './WhatsAppGrpBtn';
 const F1English = (props) => {
   return (
     <div id="all stream">
-      <h1 className=" m-6 mx-auto flex justify-center font-sans text-3xl font-extrabold text-green-900">
-        🏎️ Azerbaijan GP 🏎️
-      </h1>
-      <div className="mx-auto flex w-11/12 justify-center">
+      <div className=' m-6'>
+        <RaceDetails/>
+      </div>
+      <div className="mx-auto grid w-11/12 justify-center">
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 1 </h2>
           <iframe
@@ -54,9 +54,6 @@ const F1English = (props) => {
         </div>
       </div>
       <WhatsAppChatBtn />
-      <div className=' m-6'>
-        <RaceDetails/>
-      </div>
     </div>
     
   );
