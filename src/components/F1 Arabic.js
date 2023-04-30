@@ -1,17 +1,29 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React from 'react';
 import M3U8Player from './M3U8Player';
+import RaceDetails from './RaceDetails';
 import RefreshBtn from './RefreshBtn';
 import StreamChangeButton from './StreamChangeButton';
 import WhatsAppChatBtn from './WhatsAppChatBtn';
 import WhatsAppGrpBtn from './WhatsAppGrpBtn';
-import RaceDetails from './RaceDetails';
+import React from 'react';
+
+
+function handleClick() {
+  window.location.href =
+    "https://wa.me/33626043435?text=I want to publish my brand on the F1 website!";
+}
 
 const F1Arabic = (props) => {
   return (
     <div id='all stream arabic'>
-      <div className=' m-6'>
+      <div className=' mx-auto grid justify-center items-center'>
         <RaceDetails/>
+        <button className=' opacity-50 hover:opacity-100 p-6 mx-auto bg-gray-400 w-fit flex justify-center border-solid border-black rounded-md m-3 items-center'
+          onClick={handleClick}
+        >
+            ADS SPACE HERE
+            <br/>CONTACT US
+        </button>
       </div>
       <div className="mx-auto grid md:flex w-11/12 justify-center">
         <div className="m-0 grid justify-center">
