@@ -1,6 +1,5 @@
-import { faMagic, faMessage, faMobilePhone, faPhone, faWalkieTalkie } from "@fortawesome/free-solid-svg-icons";
+import {faMessage} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import WhatsAppLogo from "../assets/whatsapp.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WhatsAppChatBtn = () => {

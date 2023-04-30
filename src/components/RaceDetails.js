@@ -37,7 +37,7 @@ class RaceDetails extends Component {
 
   convertTimeTo12HFormat(timeString) {
     // Split the time string into its hours, minutes, and seconds components
-    const [hours, minutes, seconds] = timeString.split(":").map(Number);
+    const [hours, minutes] = timeString.split(":").map(Number);
 
     // Determine whether it's AM or PM
     const suffix = hours >= 12 ? "PM" : "AM";
