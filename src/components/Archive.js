@@ -6,12 +6,11 @@ import WhatsAppGrpBtn from './WhatsAppGrpBtn';
 const Basket = (props) => {
   return (
     <div>
-      <h1 className=" mx-auto">🏎️ ARCHIVES 🏎️</h1>
-      <WhatsAppGrpBtn />
+      <h1 className=" p-6 text-4xl font-extrabold text-center mx-auto">🏎️ ARCHIVES 🏎️</h1>
       <ChakraProvider>
         <Divider orientation="horizontal" />
         <Center>
-          <h1>Sorry, no archives for the moment!</h1>
+          <h1 className=' text-2xl text-center p-64'>Sorry, no archives for the moment!</h1>
         </Center>
         <Divider orientation="horizontal" />
       </ChakraProvider>
