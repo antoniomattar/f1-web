@@ -21,7 +21,7 @@ function App() {
             element={
               <F1English
                 name="English"
-                link="https://ed-t1.edghst.me/plyvivo/reha9u2ifalezo2u5axo/chunklist.m3u8"
+                link="https://sportsgala.one/yayinch10.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NC8zMC8yMDIzIDExOjA4OjQxIEFNJmhhc2hfdmFsdWU9d2V2SU01KzZuVDFLZGtONTA4M3R2UT09JnZhbGlkbWludXRlcz03MjAmaWQ9NDYuMTkzLjEuMTA0JnN0cm1fbGVuPTU="
               />
             }
           />

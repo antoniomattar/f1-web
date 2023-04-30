@@ -5,6 +5,7 @@ import StreamChangeButton from './StreamChangeButton';
 import WhatsAppChatBtn from './WhatsAppChatBtn';
 import WhatsAppGrpBtn from './WhatsAppGrpBtn';
 import React from 'react';
+import M3U8Player from './M3U8Player';
 
 // import DOTDBtn from "./DOTDBtn";
 // import M3U8Player from "./M3U8Player";
@@ -49,19 +50,12 @@ const F1English = (props) => {
           <RefreshBtn />
         </div>
 
+
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 2 </h2>
-          <iframe
-            className="w-fit rounded-xl border-8 border-solid border-red-600"
-            src="https://www.youtube.com/embed/dXN-53st-uc"
-            frameborder="0"
-            allowfullscreen
-            allowFullScreen="true"
-            webkitallowfullscreen="true"
-            mozallowfullscreen="true"
-          />
-          {/* <M3U8Player link={props.link}/> */}
+          <M3U8Player link={props.link} />
         </div>
+        
       </div>
       <WhatsAppChatBtn />
     </div>
