@@ -32,7 +32,7 @@ const F1English = (props) => {
           <h2 className="mx-auto font-bold"> STREAM 1 </h2>
           <iframe
             className="w-fit rounded-xl border-8 border-solid border-red-600"
-            src="https://www.youtube.com/embed/dXN-53st-uc"
+            src="//ok.ru/videoembed/5759078637170"
             frameborder="0"
             allow="autoplay"
             allowfullscreen
@@ -53,7 +53,7 @@ const F1English = (props) => {
           <h2 className="mx-auto font-bold"> STREAM 2 </h2>
           <iframe
             className="w-fit rounded-xl border-8 border-solid border-red-600"
-            src="//ok.ru/videoembed/5759078637170"
+            src="https://www.youtube.com/embed/dXN-53st-uc"
             frameborder="0"
             allowfullscreen
             allowFullScreen="true"
