@@ -1,7 +1,6 @@
 import React from 'react';
 import { Center, ChakraProvider, Divider } from '@chakra-ui/react';
 import WhatsAppChatBtn from './WhatsAppChatBtn';
-import WhatsAppGrpBtn from './WhatsAppGrpBtn';
 
 const Basket = (props) => {
   return (
