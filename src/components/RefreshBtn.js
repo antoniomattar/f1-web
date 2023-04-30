@@ -13,23 +13,17 @@ const RefreshBtn = () => {
   // Or via trigger
   // Style here will overwrite the entire style above
   return (
-    <ChakraProvider>
-      <Center>
-        <Button
-          colorScheme="blue"
-          margin="2.5"
-          justifySelf={'center'}
-          onClick={async () => {
+    <div className='flex justify-center mx-auto'>
+        <button 
+          className='bg-red-700 text-white justify-self-center m-2.5 font-sans font-bold mx-auto p-2 rounded-xl h-fit w-fit' onClick={async () => {
             toast({
               containerStyle: {},
             });
             window.location.reload();
-          }}
-        >
+          }}>
           REFRESH
-        </Button>
-      </Center>
-    </ChakraProvider>
+        </button>
+    </div>
   );
 };
 

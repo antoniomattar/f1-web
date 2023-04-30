@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button, Center, ChakraProvider } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 const StreamChangeButton = (props) => {
@@ -15,18 +14,13 @@ const StreamChangeButton = (props) => {
     }
   }
   return (
-    <ChakraProvider>
-      <Center>
-        <Button
-          colorScheme="blue"
-          justifySelf={'center'}
-          onClick={() => ChangeStreamLanguage()}
-          margin="2.5"
+    <div className='flex justify-center items-center'>
+        <button
+          className='bg-red-700 text-white justify-self-center m-2.5 font-sans font-bold mx-auto p-2 rounded-xl h-fit w-fit' onClick={()=>ChangeStreamLanguage()}
         >
           Change to {props.newlang}{' '}
-        </Button>
-      </Center>
-    </ChakraProvider>
+        </button>
+    </div>
   );
 };
 
