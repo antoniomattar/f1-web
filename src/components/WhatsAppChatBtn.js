@@ -1,4 +1,7 @@
-import React from 'react';
+import { faMagic, faMessage, faMobilePhone, faPhone, faWalkieTalkie } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import WhatsAppLogo from "../assets/whatsapp.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WhatsAppChatBtn = () => {
   return (
@@ -8,7 +11,9 @@ const WhatsAppChatBtn = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <i class="fa fa-whatsapp whatsapp-icon"></i>
+      <div className="flex justify-center items-center self-center text-center content-center">
+        <FontAwesomeIcon icon={faMessage} className="text-white" />
+      </div>
     </a>
   );
 };

@@ -9,8 +9,8 @@ const M3U8Player = (props) => {
           url={props.link}
           playing={true}
           controls={true}
-          width={360}
-          height={203}
+          width={270}
+          height={152}
         />
       </div>
     </>

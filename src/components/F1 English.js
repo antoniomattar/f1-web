@@ -13,7 +13,7 @@ import WhatsAppGrpBtn from './WhatsAppGrpBtn';
 // 5759078440562
 const F1English = (props) => {
   return (
-    <div id="all stream">
+    <div id="all stream english">
       <div className=' m-6'>
         <RaceDetails/>
       </div>
@@ -21,7 +21,7 @@ const F1English = (props) => {
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 1 </h2>
           <iframe
-            className=" m-6 w-fit rounded-xl border-8 border-solid border-red-600"
+            className="w-fit rounded-xl border-8 border-solid border-red-600"
             src="//ok.ru/videoembed/5759078637170"
             frameborder="0"
             allow="autoplay"
@@ -29,11 +29,11 @@ const F1English = (props) => {
             allowFullScreen="true"
             webkitallowfullscreen="true"
             mozallowfullscreen="true"
-          ></iframe>
+          />
           {/* 5759078440562 */}
         </div>
 
-        <div className="grid justify-center">
+        <div className="grid justify-center m-6">
           <StreamChangeButton language="English" newlang="Arabic" />
           <WhatsAppGrpBtn />
           <RefreshBtn />
@@ -42,14 +42,14 @@ const F1English = (props) => {
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 2 </h2>
           <iframe
-            className=" m-6 w-fit rounded-xl border-8 border-solid border-red-600"
+            className="w-fit rounded-xl border-8 border-solid border-red-600"
             src="//ok.ru/videoembed/5759078637170"
             frameborder="0"
             allowfullscreen
             allowFullScreen="true"
             webkitallowfullscreen="true"
             mozallowfullscreen="true"
-          ></iframe>
+          />
           {/* <M3U8Player link={props.link}/> */}
         </div>
       </div>
