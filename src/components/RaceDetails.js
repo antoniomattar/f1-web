@@ -93,35 +93,35 @@ class RaceDetails extends Component {
               ? this.state.closestRace["raceName"] +
                 " " +
                 this.state.closestRace["season"]
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
 
           <h3 className=" text-sm font-semibold">
             🏟️ :{" "}
             {this.state.closestRace
               ? this.state.closestRace["Circuit"]["circuitName"]
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
 
           <h3 className=" text-sm font-semibold">
             📍 :{" "}
             {this.state.closestRace
               ? this.state.closestRace["Circuit"]["Location"]["locality"]
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
 
           <h3 className=" text-sm font-semibold">
             🗺️ :{" "}
             {this.state.closestRace
               ? this.state.closestRace["Circuit"]["Location"]["country"]
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
 
           <h3 className=" text-sm font-semibold">
             Quali 🗓️:{" "}
             {this.state.closestRace
               ? this.formatDate(this.state.closestRace["Qualifying"]["date"])
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
 
           <h3 className=" text-sm font-semibold">
@@ -133,14 +133,14 @@ class RaceDetails extends Component {
                     this.state.closestRace["time"].length - 1
                   )
                 )
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
 
           <h3 className=" text-sm font-semibold">
             Race 🗓️:{" "}
             {this.state.closestRace
               ? this.formatDate(this.state.closestRace["date"])
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
 
           <h3 className=" text-sm font-semibold">
@@ -152,7 +152,7 @@ class RaceDetails extends Component {
                     this.state.closestRace["time"].length - 1
                   )
                 )
-              : "Loading..."}
+              : "Faster than Latifi..."}
           </h3>
         </div>
       </div>
