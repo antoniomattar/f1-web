@@ -86,13 +86,12 @@ class RaceDetails extends Component {
   render() {
     return (
       <div className="grid justify-center items-center align-middle">
-        <h1 className="text-3xl font-bold text-center">🏎️ RACE DETAILS 🏎️</h1>
-        <div className=" bg-green-700 text-white rounded-2xl p-6">
+        <div className=" bg-green-700 text-white rounded-2xl p-6 m-2">
           <h3 className=" text-xl font-bold m-2 top-11">
             {this.state.closestRace
               ? this.state.closestRace["raceName"] +
                 " " +
-                this.state.closestRace["season"]
+                this.state.closestRace["season"] + '🏎️'
               : "Faster than Latifi..."}
           </h3>
 
