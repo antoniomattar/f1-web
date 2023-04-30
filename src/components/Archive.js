@@ -9,7 +9,7 @@ const Basket = (props) => {
       <ChakraProvider>
         <Divider orientation="horizontal" />
         <Center>
-          <h1 className=' text-2xl text-center p-64'>Sorry, no archives for the moment!</h1>
+          <h1 className=' text-2xl text-center p-6'>Sorry, no archives for the moment!</h1>
         </Center>
         <Divider orientation="horizontal" />
       </ChakraProvider>
