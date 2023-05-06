@@ -6,27 +6,27 @@ import WhatsAppChatBtn from './WhatsAppChatBtn';
 import WhatsAppGrpBtn from './WhatsAppGrpBtn';
 import React from 'react';
 import M3U8Player from './M3U8Player';
+import AdsSlideshow from './AdsSlideshow';
 
 // import DOTDBtn from "./DOTDBtn";
 // import M3U8Player from "./M3U8Player";
 
 // 5759078047346
 // 5759078440562
-function handleClick() {
-  window.location.href =
-    "https://wa.me/33626043435?text=I want to publish my brand on the F1 website!";
-}
+
 const F1English = (props) => {
   return (
     <div id="all stream english" className=' mb-14'>
-      <div className=' mx-auto grid justify-center items-center'>
-        <RaceDetails/>
-        <button className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded opacity-50 hover:opacity-100 w-full h-32 mx-auto flex justify-center border-solid  m-3 items-center'
-          onClick={handleClick}
-        >
-            ADS SPACE HERE
-            <br/>CONTACT US
-        </button>
+      <div className=' w-10/12 mx-auto grid justify-center items-center'>
+        
+        <AdsSlideshow
+          ads={
+             [
+                { src: 'https://cdn.nba.com/manage/2023/04/Image-from-iOS.jpg', alt: 'Ad 1', link: 'https://wa.me/33626043435?text=I want to publish ads on F1 website!' },
+                { src: 'https://imagescdn.mtv.com.lb/articles/818052262453.jpg?width=533&quality=100', alt: 'Ad 2', link: 'http://leb-basketball-site-next.vercel.app' },
+              ]
+          }
+        />
       </div>
       <div className="mx-auto grid md:flex w-11/12 justify-center">
         <div className="grid justify-center">
@@ -55,8 +55,10 @@ const F1English = (props) => {
           <h2 className="mx-auto font-bold"> STREAM 2 </h2>
           <M3U8Player link={props.link} />
         </div>
+        
 
       </div>
+      <RaceDetails />
       <WhatsAppChatBtn />
     </div>
     
