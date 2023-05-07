@@ -1,7 +1,6 @@
-import React from 'react';
 import { useToast } from '@chakra-ui/react';
 
-const RefreshBtn = () => {
+export default function RefreshBtn() {
   const toast = useToast({
     position: 'top-10',
     title: 'Stream is updated',
@@ -27,4 +26,3 @@ const RefreshBtn = () => {
   );
 };
 
-export default RefreshBtn;

@@ -1,8 +1,6 @@
-import React from 'react';
-
-const About = () => {
+export default function About()  {
   return (
-    <React.Fragment>
+    <div>
       <div className="md:text-3xl text-xl text-center h-max p-10 m-5 text-black">
         Hello World,
         <br />
@@ -17,8 +15,7 @@ const About = () => {
         <br />
         Thank you! 🙏
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
-export default About;

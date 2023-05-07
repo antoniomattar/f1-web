@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Menu from './Menu';
 import PageNotFound from './PageNotFound';
 
-function App() {
+export default function App() {
   return (
     <div className="grid">
       <Menu />
@@ -44,5 +44,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

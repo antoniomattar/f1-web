@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 
-class RaceDetails extends Component {
+export default class RaceDetails extends Component {
   state = {
     closestRace: null,
   };
@@ -158,5 +158,3 @@ class RaceDetails extends Component {
     );
   }
 }
-
-export default RaceDetails;

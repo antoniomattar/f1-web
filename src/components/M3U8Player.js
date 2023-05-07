@@ -1,7 +1,6 @@
-import React from 'react';
 import ReactPlayer from 'react-player';
 
-const M3U8Player = (props) => {
+export default function M3U8Player(props) {
   return (
     <>
       <div className="mx-auto w-fit rounded-xl border-8 border-solid border-red-600">
@@ -16,5 +15,3 @@ const M3U8Player = (props) => {
     </>
   );
 };
-
-export default M3U8Player;

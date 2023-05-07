@@ -1,8 +1,7 @@
-import React from 'react';
 import { Center, ChakraProvider, Divider } from '@chakra-ui/react';
 import WhatsAppChatBtn from './WhatsAppChatBtn';
 
-const Basket = (props) => {
+export default function Basket(props) {
   return (
     <div>
       <h1 className=" p-6 text-4xl font-extrabold text-center mx-auto">🏎️ ARCHIVES 🏎️</h1>
@@ -18,4 +17,3 @@ const Basket = (props) => {
   );
 };
 
-export default Basket;

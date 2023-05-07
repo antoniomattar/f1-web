@@ -4,14 +4,13 @@ import React from 'react';
 import Divider from './Divider';
 
 
-const Menu = () => {
+export default function Menu() {
   function menuToggle() {
     const menu = document.querySelector("#menu-toggle");
     menu.classList.toggle("hidden");
     }
 
   return (
-    <>
       <nav class="border-b border-gray-200 px-2">
         <div class="mx-auto flex max-w-screen-xl flex-wrap justify-center p-4">
           <a href="./" class="flex items-center">
@@ -105,8 +104,5 @@ const Menu = () => {
         </div>
         
       </nav>
-    </>
   );
 };
-
-export default Menu;

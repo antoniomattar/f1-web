@@ -13,7 +13,7 @@ function handleClick() {
     "https://wa.me/33626043435?text=I want to publish my brand on the F1 website!";
 }
 
-const F1Arabic = (props) => {
+export default function F1Arabic(props) {
   return (
     <div id='all stream arabic' className=' mb-14'>
       <div className=' mx-auto grid justify-center items-center'>
@@ -57,5 +57,3 @@ const F1Arabic = (props) => {
     </div>
   );
 };
-
-export default F1Arabic;

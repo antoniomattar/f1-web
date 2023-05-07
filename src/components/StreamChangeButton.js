@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const StreamChangeButton = (props) => {
+export default function StreamChangeButton(props) {
   const [setLanguage] = useState(props.language);
   const navigate = useNavigate();
   function ChangeStreamLanguage() {
@@ -23,5 +23,3 @@ const StreamChangeButton = (props) => {
     </div>
   );
 };
-
-export default StreamChangeButton;

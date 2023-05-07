@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '@chakra-ui/react';
 
-const PageNotFound = () => {
+export default function PageNotFound() {
   return (
     <React.Fragment>
       <Text fontSize="50px" color="black" margin="50">
@@ -13,6 +13,4 @@ const PageNotFound = () => {
       </Text>
     </React.Fragment>
   );
-};
-
-export default PageNotFound;
+}

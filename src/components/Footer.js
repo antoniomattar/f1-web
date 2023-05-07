@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <div className=' w-full flex justify-center'>
       <footer
@@ -22,5 +22,3 @@ const Footer = () => {
     
   );
 };
-
-export default Footer;

@@ -14,7 +14,7 @@ import AdsSlideshow from './AdsSlideshow';
 // 5759078047346
 // 5759078440562
 
-const F1English = (props) => {
+export default function F1English(props) {
   return (
     <div id="all stream english" className=' mb-14'>
       <div className=' w-10/12 mx-auto grid justify-center items-center'>
@@ -64,5 +64,3 @@ const F1English = (props) => {
     
   );
 };
-
-export default F1English;

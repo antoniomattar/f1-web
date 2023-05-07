@@ -1,18 +1,12 @@
-import React, { Component } from 'react';
-import { Button, Center } from '@chakra-ui/react';
-
-export class DOTDBtn extends Component {
-  render() {
+export default function DOTDBtn() {
     return (
-      <Center>
-        <Button size="xs" colorScheme="red" margin="2.5" justifySelf={'center'}>
+      <div className=''>
+        <button size="xs" colorScheme="red" margin="2.5" justifySelf={'center'}>
           <a href="https://www.formula1.com/en/vote.html">
             VOTE FOR DRIVER OF THE DAY
           </a>
-        </Button>
-      </Center>
+        </button>
+      </div>
     );
-  }
 }
 
-export default DOTDBtn;
