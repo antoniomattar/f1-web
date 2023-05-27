@@ -1,4 +1,4 @@
-import ReactPlayer from 'react-player';
+import ReactPlayer from "react-player";
 
 export default function M3U8Player(props) {
   return (
@@ -14,4 +14,4 @@ export default function M3U8Player(props) {
       </div>
     </>
   );
-};
+}

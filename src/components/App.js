@@ -1,13 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './About';
-import './App.css';
-import Archive from './Archive';
-import F1Arabic from './F1 Arabic';
-import F1English from './F1 English';
-import Footer from './Footer';
-import Menu from './Menu';
-import PageNotFound from './PageNotFound';
+import About from "./About";
+import "./App.css";
+import Archive from "./Archive";
+import F1Arabic from "./F1 Arabic";
+import F1English from "./F1 English";
+import Footer from "./Footer";
+import Menu from "./Menu";
+import PageNotFound from "./PageNotFound";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 export default class RaceDetails extends Component {
   state = {
     closestRace: null,
@@ -91,7 +90,8 @@ export default class RaceDetails extends Component {
             {this.state.closestRace
               ? this.state.closestRace["raceName"] +
                 " " +
-                this.state.closestRace["season"] + '🏎️'
+                this.state.closestRace["season"] +
+                "🏎️"
               : "Faster than Latifi..."}
           </h3>
 

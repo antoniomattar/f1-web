@@ -1,12 +1,11 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import M3U8Player from './M3U8Player';
-import RaceDetails from './RaceDetails';
-import RefreshBtn from './RefreshBtn';
-import StreamChangeButton from './StreamChangeButton';
-import WhatsAppChatBtn from './WhatsAppChatBtn';
-import WhatsAppGrpBtn from './WhatsAppGrpBtn';
-import React from 'react';
-
+import M3U8Player from "./M3U8Player";
+import RaceDetails from "./RaceDetails";
+import RefreshBtn from "./RefreshBtn";
+import StreamChangeButton from "./StreamChangeButton";
+import WhatsAppChatBtn from "./WhatsAppChatBtn";
+import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
+import React from "react";
 
 function handleClick() {
   window.location.href =
@@ -15,14 +14,16 @@ function handleClick() {
 
 export default function F1Arabic(props) {
   return (
-    <div id='all stream arabic' className=' mb-14'>
-      <div className=' mx-auto grid justify-center items-center'>
-        <RaceDetails/>
-        <button className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded opacity-50 hover:opacity-100 p-6 mx-auto w-fit flex justify-center border-solid  m-3 items-center'
+    <div id="all stream arabic" className=" mb-14">
+      <div className=" mx-auto grid justify-center items-center">
+        <RaceDetails />
+        <button
+          className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded opacity-50 hover:opacity-100 p-6 mx-auto w-fit flex justify-center border-solid  m-3 items-center"
           onClick={handleClick}
         >
-            ADS SPACE HERE
-            <br/>CONTACT US
+          ADS SPACE HERE
+          <br />
+          CONTACT US
         </button>
       </div>
       <div className="mx-auto grid md:flex w-11/12 justify-center">
@@ -56,4 +57,4 @@ export default function F1Arabic(props) {
       <WhatsAppChatBtn />
     </div>
   );
-};
+}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function  AdsSlideshow({ ads }) {
+export default function AdsSlideshow({ ads }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -25,5 +25,4 @@ export default function  AdsSlideshow({ ads }) {
       ))}
     </div>
   );
-};
-
+}
