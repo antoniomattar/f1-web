@@ -21,7 +21,7 @@ export default function App() {
             element={
               <F1English
                 name="English"
-                link="https://storage.googleapis.com/thizovoreal4/mux_video_ts/index-1.m3u8"
+                link="https://mcdn.mrgamingstreams.com/mrgamingskyf1.m3u8"
               />
             }
           />
