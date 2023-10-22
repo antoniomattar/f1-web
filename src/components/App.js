@@ -21,8 +21,8 @@ export default function App() {
             element={
               <F1English
                 name="English"
-                link1="https://mcdn.mrgamingstreams.com/mrgamingskyf1.m3u8"
-                link2="https://ssss79.jokerplayer7.online/live/vskysf1lsh.m3u8?e=1698006518&st=OXlxLS-v4srAdZkHR3IyhQ"
+                link2="https://mcdn.mrgamingstreams.com/mrgamingskyf1.m3u8"
+                link1="https://ssss79.jokerplayer7.online/live/vskysf1lsh.m3u8?e=1698006518&st=OXlxLS-v4srAdZkHR3IyhQ"
               />
             }
           />
