@@ -21,15 +21,10 @@ export default function F1English(props) {
         <AdsSlideshow
           ads={[
             {
-              src: "https://cdn-7.motorsport.com/images/amp/YBekW572/s1000/pierre-gasly-alphatauri-at03-y.jpg",
+              src: "https://www.reuters.com/resizer/nBo8iTypX5ZagXF-mOqERdreLdE=/1920x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/MMORGESYXROFNJ6MEKPMJ5NNZA.jpg",
               alt: "Ad 1",
-              link: "https://wa.me/33626043435?text=I want to publish ads on F1 website!",
-            },
-            {
-              src: "https://imagescdn.mtv.com.lb/articles/818052262453.jpg?width=533&quality=100",
-              alt: "Ad 2",
-              link: "http://leb-basketball-site-next.vercel.app",
-            },
+              link: "#",
+            }
           ]}
         />
       </div>
