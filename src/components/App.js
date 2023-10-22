@@ -22,7 +22,7 @@ export default function App() {
               <F1English
                 name="English"
                 link2="https://mcdn.mrgamingstreams.com/mrgamingskyf1.m3u8"
-                link1="https://ssss79.jokerplayer7.online/live/vskysf1lsh.m3u8?e=1698006518&st=OXlxLS-v4srAdZkHR3IyhQ"
+                link1="https://ssss12.jokerplayer7.online/live/canal.m3u8?e=1698008814&st=j6-aOaUN29IOH9KXjM2oJg"
               />
             }
           />
