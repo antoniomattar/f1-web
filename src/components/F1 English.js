@@ -31,7 +31,7 @@ export default function F1English(props) {
       <div className="mx-auto grid md:flex w-11/12 justify-center">
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 1 </h2>
-          <M3U8Player link={props.link} />
+          <M3U8Player link={props.link1} />
           {/* 5759078440562 */}
         </div>
 
@@ -43,16 +43,7 @@ export default function F1English(props) {
 
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 2 </h2>
-          <iframe
-            className="w-fit rounded-xl border-8 border-solid border-red-600"
-            src="//ok.ru/videoembed/5759078637170"
-            frameborder="0"
-            allow="autoplay"
-            allowfullscreen
-            allowFullScreen="true"
-            webkitallowfullscreen="true"
-            mozallowfullscreen="true"
-          />
+          <M3U8Player link={props.link2} />
         </div>
       </div>
       <RaceDetails />

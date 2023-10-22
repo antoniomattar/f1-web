@@ -31,7 +31,7 @@ export default function F1Arabic(props) {
           <h2 className="mx-auto font-bold h-fit"> STREAM 1 </h2>
           <iframe
             className=" w-fit rounded-xl border-8 border-solid border-red-600"
-            src="//ok.ru/videoembed/4956867534367?nochat=1"
+            src="//ok.ru/videoembed/7020901179091?nochat=1"
             frameborder="0"
             allow="autoplay"
             allowfullscreen

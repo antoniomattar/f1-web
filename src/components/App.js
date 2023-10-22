@@ -21,7 +21,8 @@ export default function App() {
             element={
               <F1English
                 name="English"
-                link="https://mcdn.mrgamingstreams.com/mrgamingskyf1.m3u8"
+                link1="https://mcdn.mrgamingstreams.com/mrgamingskyf1.m3u8"
+                link2="https://ed-c001.edgking.me/plyvivo/8o3uxe2upaw03o3useji/chunklist.m3u8"
               />
             }
           />
