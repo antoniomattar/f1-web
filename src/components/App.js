@@ -22,7 +22,7 @@ export default function App() {
               <F1English
                 name="English"
                 link2="https://a36.azplay.me/hls/streama216039/index.m3u8?cst=6c7526271d149ee774a7bef36638745d"
-                link1="https://a36.azplay.me/hls/streama216039/index.m3u8?cst=6c7526271d149ee774a7bef36638745d"
+                link1="https://a46.azplay.me/hls/streama216039/index.m3u8?cst=805361fde3869b3d8a6cfd16eb9115b0"
               />
             }
           />
