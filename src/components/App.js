@@ -21,7 +21,7 @@ export default function App() {
             element={
               <F1English
                 name="English"
-                link2="https://a36.azplay.me/hls/streama216039/index.m3u8?cst=6c7526271d149ee774a7bef36638745d"
+                link2="https://headlinessportsfoot.com/chunklist/hlsch10.m3u8"
                 link1="https://storage.googleapis.com/asdfrgsdcefmqwed/mux_video_ts/index-1.m3u8"
               />
             }
