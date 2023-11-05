@@ -6,6 +6,8 @@ import StreamChangeButton from "./StreamChangeButton";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import React from "react";
+import ShakaPlayer from "./ShakaPlayer";
+
 
 function handleClick() {
   window.location.href =
@@ -27,8 +29,21 @@ export default function F1Arabic(props) {
         </button>
       </div>
       <div className="mx-auto grid md:flex w-11/12 justify-center">
+
+        <div className="grid justify-center">
+          <h2 className="mx-auto font-bold"> STREAM 1 </h2>
+          <ShakaPlayer/>
+        </div>
+
+        <div className="grid justify-center m-6">
+          <StreamChangeButton language="Arabic" newlang="English" />
+          <WhatsAppGrpBtn />
+          <RefreshBtn />
+        </div>
+
         <div className="m-0 grid justify-center">
-          <h2 className="mx-auto font-bold h-fit"> STREAM 1 </h2>
+          <h2 className="mx-auto font-bold h-fit"> STREAM 2 </h2>
+          <video src="https://ssc-2-on-prem-ak.akamaized.net/out/v1/d9a2acf5f809461ca47714440fcbc0f4/index.mpd" ></video>
           <iframe
             className=" w-fit rounded-xl border-8 border-solid border-red-600"
             src="//ok.ru/videoembed/7020901179091?nochat=1"
@@ -42,16 +57,6 @@ export default function F1Arabic(props) {
           {/* 5759078440562 */}
         </div>
 
-        <div className="grid justify-center m-6">
-          <StreamChangeButton language="Arabic" newlang="English" />
-          <WhatsAppGrpBtn />
-          <RefreshBtn />
-        </div>
-
-        <div className="grid justify-center">
-          <h2 className="mx-auto font-bold"> STREAM 2 </h2>
-          <M3U8Player link={props.link} />
-        </div>
       </div>
 
       <WhatsAppChatBtn />
