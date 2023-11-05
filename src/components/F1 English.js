@@ -7,6 +7,8 @@ import StreamChangeButton from "./StreamChangeButton";
 import WhatsAppChatBtn from "./WhatsAppChatBtn";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import React from "react";
+import ShakaPlayer from "./ShakaPlayer";
+
 
 // import DOTDBtn from "./DOTDBtn";
 // import M3U8Player from "./M3U8Player";
@@ -43,7 +45,7 @@ export default function F1English(props) {
 
         <div className="grid justify-center">
           <h2 className="mx-auto font-bold"> STREAM 2 </h2>
-          <M3U8Player link={props.link2} />
+          <ShakaPlayer/>
         </div>
       </div>
       <RaceDetails />
