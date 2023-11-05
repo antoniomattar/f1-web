@@ -21,7 +21,7 @@ export default function App() {
             element={
               <F1English
                 name="English"
-                link2="https://headlinessportsfoot.com/chunklist/hlsch10.m3u8"
+                link2="https://vladrums.com/images/0021.m3u8?md5=8m7yuJ6MSTFklrCf2VyrGw&expires=1699218130"
                 link1="https://storage.googleapis.com/asdfrgsdcefmqwed/mux_video_ts/index-1.m3u8"
               />
             }
