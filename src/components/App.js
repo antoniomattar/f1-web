@@ -32,7 +32,7 @@ export default function App() {
             element={
               <F1Arabic
                 name="Arabic"
-                link="https://shls-live-event2-prod-dub.shahid.net/out/v1/0456ede1a39145d98b3d8c8062ddc998/index_7.m3u8"
+                link="https://ddy5.hlsjs.ru/ddy5/premium615/tracks-v1a1/mono.m3u8"
               />
             }
           />
