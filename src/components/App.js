@@ -22,7 +22,7 @@ export default function App() {
               <F1English
                 name="English"
                 link2="https://ssss12.jokerplayer7.online/live/vskysf1lsh.m3u8?e=1699210598&st=eQzyCJSwm2DC1m-8HiryPg"
-                link1="https://ssss12.jokerplayer7.online/live/vskysf1lsh.m3u8?e=1699210598&st=eQzyCJSwm2DC1m-8HiryPg"
+                link1="https://cdn.wholive2.pro:8089/hls/gvMWF6v86iGo/index.m3u8?st=cLoTnvOs7bbUcLRDvX--BQ&e=1699215748"
               />
             }
           />
