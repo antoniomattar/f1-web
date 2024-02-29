@@ -22,7 +22,7 @@ export default function App() {
               <F1English
                 name="English"
                 link2="https://pl.asfghjjk4.shop/playlist/19865/afsvvvvv.101streams.online/caxi.m3u8 "
-                link1="https://cdn.wholive2.pro:8089/hls/gvMWF6v86iGo/index.m3u8?st=cLoTnvOs7bbUcLRDvX--BQ&e=1699215748"
+                link1="https://pl.asfghjjk4.shop/playlist/19865/afsvvvvv.101streams.online/caxi.m3u8 "
               />
             }
           />
