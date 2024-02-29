@@ -34,6 +34,11 @@ const ShakaPlayer = () => {
         parentId: "#player",
         autoPlay: true,
         plugins: [DashShakaPlayback, QualitySelector],
+        // add quality selector plugin
+        qualitySelector: {
+          displayCurrentQuality: true,
+
+        },
         shakaConfiguration: {
           abr: {
             capLevelToPlayerSize: true,
@@ -94,11 +99,7 @@ const ShakaPlayer = () => {
   }, []);
 
   return (
-      <div
-        id="player"
-        style={{ width: "100%", height: "auto" }}
-        ref={videoRef}
-      ></div>
+      <div id="player" className="mx-auto w-fit h-fit rounded-xl border-8 border-solid border-red-600"/>
   );
 };
 
