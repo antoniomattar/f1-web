@@ -23,7 +23,7 @@ export default function F1English(props) {
         <AdsSlideshow
           ads={[
             {
-              src: "https://www.reuters.com/resizer/nBo8iTypX5ZagXF-mOqERdreLdE=/1920x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/MMORGESYXROFNJ6MEKPMJ5NNZA.jpg",
+              src: "https://pressover.news/wp-content/uploads/2022/11/placeholder.png",
               alt: "Ad 1",
               link: "#",
             }
