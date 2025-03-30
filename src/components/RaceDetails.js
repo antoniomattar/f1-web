@@ -6,8 +6,8 @@ export default class RaceDetails extends Component {
   };
 
   async componentDidMount() {
-    const data = await fetch("https://ergast.com/api/f1/current.json").then(
-      (res) => res.json()
+    const data = await fetch("https://ergast.com/api/f1/current.json").then((res) =>
+      res.json()
     );
     const races = data["MRData"]["RaceTable"]["Races"];
     const closestRace = this.getClosestRace(races);
@@ -16,17 +16,9 @@ export default class RaceDetails extends Component {
 
   getClosestRace(races) {
     const today = new Date();
-
     for (let index = 0; index < races.length; index++) {
       const currentRace = races[index];
       const currentRaceDate = new Date(currentRace["date"]);
-      if (currentRaceDate.getFullYear() === today.getFullYear()) {
-        if (currentRaceDate.getMonth() === today.getMonth()) {
-          if (currentRaceDate.getDate() === today.getDate()) {
-            return currentRace;
-          }
-        }
-      }
       if (currentRaceDate.getTime() >= today.getTime()) {
         return currentRace;
       }
@@ -35,29 +27,18 @@ export default class RaceDetails extends Component {
   }
 
   convertTimeTo12HFormat(timeString) {
-    // Split the time string into its hours, minutes, and seconds components
     const [hours, minutes] = timeString.split(":").map(Number);
-
-    // Determine whether it's AM or PM
     const suffix = hours >= 12 ? "PM" : "AM";
-
-    // Convert the hours component to 12-hour format
     const hours12 = hours % 12 || 12;
-
-    // Return the time in 12-hour format
     return `${hours12}:${minutes.toString().padStart(2, "0")} ${suffix}`;
   }
 
   formatDate(dateString) {
-    // Create a new Date object from the input date string
     const date = new Date(dateString);
-
-    // Get the day, month, and year components of the date
     const day = date.getDate();
     const month = date.toLocaleString("default", { month: "long" });
     const year = date.getFullYear();
 
-    // Format the day component with the appropriate suffix
     let dayWithSuffix;
     switch (day) {
       case 1:
@@ -78,82 +59,32 @@ export default class RaceDetails extends Component {
         break;
     }
 
-    // Return the formatted date string
     return `${dayWithSuffix} of ${month} ${year}`;
   }
 
   render() {
+    const { closestRace } = this.state;
+
+    if (!closestRace) {
+      return <p>Loading race details...</p>;
+    }
+
     return (
-      <div className="grid justify-center items-center align-middle">
-        <div className=" bg-green-700 text-white rounded-2xl p-6 m-2">
-          <h3 className=" text-xl font-bold m-2 top-11">
-            {this.state.closestRace
-              ? this.state.closestRace["raceName"] +
-                " " +
-                this.state.closestRace["season"] +
-                "🏎️"
-              : "Faster than Latifi..."}
-          </h3>
-
-          <h3 className=" text-sm font-semibold">
-            🏟️ :{" "}
-            {this.state.closestRace
-              ? this.state.closestRace["Circuit"]["circuitName"]
-              : "Faster than Latifi..."}
-          </h3>
-
-          <h3 className=" text-sm font-semibold">
-            📍 :{" "}
-            {this.state.closestRace
-              ? this.state.closestRace["Circuit"]["Location"]["locality"]
-              : "Faster than Latifi..."}
-          </h3>
-
-          <h3 className=" text-sm font-semibold">
-            🗺️ :{" "}
-            {this.state.closestRace
-              ? this.state.closestRace["Circuit"]["Location"]["country"]
-              : "Faster than Latifi..."}
-          </h3>
-
-          <h3 className=" text-sm font-semibold">
-            Quali 🗓️:{" "}
-            {this.state.closestRace
-              ? this.formatDate(this.state.closestRace["Qualifying"]["date"])
-              : "Faster than Latifi..."}
-          </h3>
-
-          <h3 className=" text-sm font-semibold">
-            <span className="underline">LOCAL</span> TIME ⏰:{" "}
-            {this.state.closestRace
-              ? this.convertTimeTo12HFormat(
-                  this.state.closestRace["Qualifying"]["time"].substring(
-                    0,
-                    this.state.closestRace["time"].length - 1
-                  )
-                )
-              : "Faster than Latifi..."}
-          </h3>
-
-          <h3 className=" text-sm font-semibold">
-            Race 🗓️:{" "}
-            {this.state.closestRace
-              ? this.formatDate(this.state.closestRace["date"])
-              : "Faster than Latifi..."}
-          </h3>
-
-          <h3 className=" text-sm font-semibold">
-            <span className="underline">LOCAL</span> TIME ⏰:{" "}
-            {this.state.closestRace
-              ? this.convertTimeTo12HFormat(
-                  this.state.closestRace["time"].substring(
-                    0,
-                    this.state.closestRace["time"].length - 1
-                  )
-                )
-              : "Faster than Latifi..."}
-          </h3>
-        </div>
+      <div className="bg-gray-100 text-gray-800 p-4 rounded-lg shadow-md my-4">
+        <h2 className="text-xl font-bold mb-2">Race Details</h2>
+        <p className="text-lg">
+          <strong>Race:</strong> {closestRace.raceName} 🏁
+        </p>
+        <p className="text-lg">
+          <strong>Date:</strong> {this.formatDate(closestRace.date)} 📅
+        </p>
+        <p className="text-lg">
+          <strong>Time:</strong> {this.convertTimeTo12HFormat(closestRace.time)} ⏰
+        </p>
+        <p className="text-lg">
+          <strong>Location:</strong> {closestRace.Circuit.Location.locality}, {" "}
+          {closestRace.Circuit.Location.country} 🌍
+        </p>
       </div>
     );
   }

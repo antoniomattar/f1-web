@@ -6,13 +6,11 @@ export default function WhatsAppChatBtn() {
   return (
     <a
       href="https://wa.me/33626043435?text=Please help me with the F1 website!"
-      class="whatsapp_float"
+      className="fixed bottom-6 left-6 bg-green-600 text-white rounded-full p-4 shadow-lg hover:bg-green-700 transition duration-300"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="flex justify-center items-center self-center text-center content-center">
-        <FontAwesomeIcon icon={faMessage} className="text-white" />
-      </div>
+      <FontAwesomeIcon icon={faMessage} className="text-2xl" />
     </a>
   );
 }

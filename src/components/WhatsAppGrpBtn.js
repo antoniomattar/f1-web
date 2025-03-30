@@ -1,12 +1,14 @@
 export default function WhatsAppGrpBtn() {
   return (
-    <button class="mx-auto flex h-fit rounded-full bg-green-600 px-4 py-2 font-bold text-white hover:bg-green-700">
+    <div className="text-center my-4">
       <a
-        className=" hover:text-white "
         href="https://chat.whatsapp.com/Jw0CN2m2fNs6y3VsO8Riwm"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-6 py-3 bg-red-600 text-white font-bold uppercase tracking-wider rounded-lg hover:bg-red-700 transition duration-300 shadow-md border border-black"
       >
-        JOIN OUR WHATSAPP GROUP!
+        Join Our WhatsApp Group
       </a>
-    </button>
+    </div>
   );
 }

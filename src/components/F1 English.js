@@ -1,55 +1,14 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
-import AdsSlideshow from "./AdsSlideshow";
-import M3U8Player from "./M3U8Player";
-import RaceDetails from "./RaceDetails";
-import RefreshBtn from "./RefreshBtn";
-import StreamChangeButton from "./StreamChangeButton";
-import WhatsAppChatBtn from "./WhatsAppChatBtn";
-import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
+import IframePlayer from "./IframePlayer";
 import React from "react";
-import ShakaPlayer from "./ShakaPlayer";
 
-
-// import DOTDBtn from "./DOTDBtn";
-// import M3U8Player from "./M3U8Player";
-
-// 5759078047346
-// 5759078440562
-
-export default function F1English(props) {
+export default function F1English() {
   return (
-    <div id="all stream english" className=" mb-14">
-      <div className=" w-10/12 mx-auto grid justify-center items-center">
-        <AdsSlideshow
-          ads={[
-            {
-              src: "https://www.reuters.com/resizer/nBo8iTypX5ZagXF-mOqERdreLdE=/1920x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/MMORGESYXROFNJ6MEKPMJ5NNZA.jpg",
-              alt: "Ad 1",
-              link: "#",
-            }
-          ]}
-        />
-      </div>
-      <div className="mx-auto grid md:flex w-11/12 justify-center">
-        <div className="grid justify-center">
-          <h2 className="mx-auto font-bold"> STREAM 1 </h2>
-          <M3U8Player link={props.link1} />
-          {/* 5759078440562 */}
-        </div>
-
-        <div className="grid justify-center m-6">
-          <StreamChangeButton language="English" newlang="Arabic" />
-          <WhatsAppGrpBtn />
-          <RefreshBtn />
-        </div>
-
-        <div className="grid justify-center">
-          <h2 className="mx-auto font-bold"> STREAM 2 </h2>
-          <ShakaPlayer/>
-        </div>
-      </div>
-      <RaceDetails />
-      <WhatsAppChatBtn />
+    <div className="bg-gray-100 text-gray-800 py-10 px-6">
+      <h1 className="text-2xl font-bold mb-4 text-center">F1 English Stream</h1>
+      <IframePlayer
+        src="https://stream-fastly.castr.com/5b9352dbda7b8c769937e459/live_2361c920455111ea85db6911fe397b9e/index.fmp4.m3u8"
+        title="F1 English Stream"
+      />
     </div>
   );
 }
