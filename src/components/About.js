@@ -6,9 +6,12 @@ export default function About() {
         <p className="text-lg leading-relaxed">
           Welcome to our F1 streaming platform! 🏎️
           <br />
-          We are passionate about bringing you the best Formula 1 experience, combining technology and sports to create a seamless streaming service.
+          We are passionate about bringing you the best Formula 1 experience,
+          combining technology and sports to create a seamless streaming
+          service.
           <br />
-          Our mission is to cover as many races as possible with minimal interruptions and ads.
+          Our mission is to cover as many races as possible with minimal
+          interruptions and ads.
           <br />
           Thank you for choosing us to enjoy the thrill of F1 racing! 🙌
         </p>

@@ -1,15 +1,15 @@
+import About from "./About";
 import AdsSlideshow from "./AdsSlideshow";
+import Archive from "./Archive";
 import F1Arabic from "./F1 Arabic";
 import F1English from "./F1 English";
 import Footer from "./Footer";
 import Menu from "./Menu";
+import PageNotFound from "./PageNotFound";
 import RaceDetails from "./RaceDetails";
 import WhatsAppGrpBtn from "./WhatsAppGrpBtn";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Archive from "./Archive";
-import About from "./About";
-import PageNotFound from "./PageNotFound";
 
 export default function App() {
   return (

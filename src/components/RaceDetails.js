@@ -6,8 +6,8 @@ export default class RaceDetails extends Component {
   };
 
   async componentDidMount() {
-    const data = await fetch("https://ergast.com/api/f1/current.json").then((res) =>
-      res.json()
+    const data = await fetch("https://ergast.com/api/f1/current.json").then(
+      (res) => res.json()
     );
     const races = data["MRData"]["RaceTable"]["Races"];
     const closestRace = this.getClosestRace(races);
@@ -79,10 +79,11 @@ export default class RaceDetails extends Component {
           <strong>Date:</strong> {this.formatDate(closestRace.date)} 📅
         </p>
         <p className="text-lg">
-          <strong>Time:</strong> {this.convertTimeTo12HFormat(closestRace.time)} ⏰
+          <strong>Time:</strong> {this.convertTimeTo12HFormat(closestRace.time)}{" "}
+          ⏰
         </p>
         <p className="text-lg">
-          <strong>Location:</strong> {closestRace.Circuit.Location.locality}, {" "}
+          <strong>Location:</strong> {closestRace.Circuit.Location.locality},{" "}
           {closestRace.Circuit.Location.country} 🌍
         </p>
       </div>
